@@ -1,15 +1,59 @@
 import traceback
+import argparse
+from loguru import logger
+from datetime import datetime as dt
+
+import pandas as pd
+
+from api.dart_api import DartAPI
+from api.krx_api import KrxAPI
+from service.collector import DartCollector
+from storage.csv import CsvStorage
 
 
-def main():
+def main(func, year):
     try:
-        print("This program converts a temperature from Celsius to Fahrenheit.")
-        print()
+        if func == "krx_market_cap_by_ticker":
+            # NOTE python main.py --func krx_market_cap_by_ticker
+            krx_api = KrxAPI()
+            result = krx_api.get_market_cap_by_ticker(from_date='20230101', to_date='20240114', market="ALL")
+            result.to_csv("market_cap_by_ticker.csv")
+        if func == "krx_market_ohlcv_by_ticker":
+            # NOTE python main.py --func krx_market_ohlcv_by_ticker
+            krx_api = KrxAPI()
+            result = krx_api.get_market_ohlcv_by_ticker(from_date='20230101', to_date='20240114', market="ALL")
+            result.to_csv("market_ohlcv.csv")
+        if func == "fix_market_cap_by_ticker":
+            # NOTE python main.py --func fix_market_cap_by_ticker
+            pd_data = pd.read_csv('market_cap_by_ticker.csv', index_col=0 )
+            pd_data = pd_data[pd_data['종가'] != 0]
+            pd_data.to_csv("market_cap_by_ticker_수정.csv")
 
-        celsius = eval(input("What is the Celsius temperature? "))
-        fahrenheit = 9/5 * celsius + 32
+        if func == "krx_single_stock_info": 
+            # NOTE python main.py --func krx_single_stock_info
+            krx_api = KrxAPI()
+            result = krx_api.get_market_cap_by_ticker()
+            logger.info(result)
 
-        print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+
+        # NOTE 데이터 transform
+
+        # NOTE 데이터 백테스트
+
     except Exception as e:
-        print(e)
-        print(traceback.format_exc())
+        logger.info(e)
+        logger.info(traceback.format_exc())
+
+
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--func', type=str)
+    parser.add_argument('--year', type=int)
+
+    args = parser.parse_args()
+    func = args.func if "func" in args else ""
+    year = args.year if "year" in args else ""
+
+    main(func, year)
