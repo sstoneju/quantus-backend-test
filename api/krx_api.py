@@ -1,12 +1,8 @@
-import json
 from time import sleep
-from matplotlib import ticker
 import pandas as pd
 from pandas import DataFrame
-import requests
 from loguru import logger
 from datetime import datetime as dt, timedelta
-from pykrx.website.krx.market.ticker import get_stock_ticker_isin
 from pykrx.website.krx import market as krx_market
 
 
