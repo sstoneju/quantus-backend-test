@@ -1,8 +1,0 @@
-,concept_id,label_ko,label_en,class0,class1,class2,class3,20211231,20201231,20191231,rcp_no,report_nm,rcept_dt,available_at,stock_code,corp_code,corp_name
-0,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,31178239720.0,28578610105.0,29228285694.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝
-11,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,63447500048.0,45636744795.0,32302366125.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝
-21,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,94625739768.0,74215354900.0,61530651819.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝
-22,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,16581687054.0,15378500699.0,12089823442.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝
-32,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,11683176122.0,3812528277.0,6418269843.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝
-38,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,28264863176.0,19191028976.0,18508093285.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝
-45,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,66360876592.0,55024325924.0,43022558534.0,20230127000635,[기재정정]사업보고서 (2021.12),20230127,20230127,278650,01189438,HLB바이오스텝

@@ -15,6 +15,13 @@ def main(func, year):
             krx_api = KrxCollector()
             result = krx_api.get_market_cap_by_ticker(from_date='20230101', to_date='20240114', market="ALL")
             result.to_csv("market_cap_by_ticker.csv")
+        if func == "sorted_result_under_50":
+            # NOTE python main.py --func sorted_result_under_50
+            krx_api = KrxCollector()
+            result = krx_api.get_market_cap_by_ticker(from_date='20240115', to_date='20240115', market="KOSPI")
+            sorted_result = result.sort_values(by='시가총액')
+            extract_result = sorted_result.head(int(len(sorted_result) * 0.5))
+            extract_result.to_csv("sorted_result_under_50.csv")
         if func == "krx_market_ohlcv_by_ticker":
             # NOTE python main.py --func krx_market_ohlcv_by_ticker
             krx_api = KrxCollector()
@@ -25,10 +32,15 @@ def main(func, year):
             pd_data = pd.read_csv('market_cap_by_ticker.csv', index_col=0 )
             pd_data = pd_data[pd_data['종가'] != 0]
             pd_data.to_csv("market_cap_by_ticker_수정.csv")
+        if func == "dart_fs_by_corp":
+            # NOTE python main.py --func dart_fs_by_corp
+            dart_api = DartCollector()
+            result = dart_api.dart_fs_by_corp(from_date='20230101', to_date='20240114')
+            logger.info(result)
         if func == "dart_corp_info":
             # NOTE python main.py --func dart_corp_info
             dart_api = DartCollector()
-            result = dart_api.check_all_company()
+            result = dart_api.dart_fs_by_day(from_date='20230101', to_date='20240114')
             logger.info(result)
 
         # NOTE 데이터 transform

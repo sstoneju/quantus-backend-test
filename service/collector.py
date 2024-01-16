@@ -1,3 +1,4 @@
+from calendar import month
 import os
 import re
 from time import sleep
@@ -12,7 +13,7 @@ import dart_fss as Dart
 from dart_fss.fs.extract import analyze_report
 from dart_fss.filings.search_result import SearchResults
 from dart_fss.filings.reports import Report
-from dart_fss.errors.errors import NotFoundConsolidated, NoDataReceived
+from dart_fss.errors.errors import NotFoundConsolidated, NoDataReceived, OverQueryLimit
 
 
 class DartCollector():
@@ -29,6 +30,103 @@ class DartCollector():
         logger.info(self.api_key[self.key_sequence])
         self.dart = Dart
         self.dart.set_api_key(self.api_key[self.key_sequence])
+    
+    def set_next_api_key(self):
+        self.key_sequence += 1
+        # TODO list 참조 예외 처리 필요
+        self.dart.set_api_key(self.api_key[self.key_sequence])
+    
+    def _today(self):
+        return dt.today().strftime("%Y%m%d")
+    
+    def _prepare_bs_fs(self, df: DataFrame):
+        """
+        재무상태표를 정리하는 함수
+        """
+        level_0 = df.columns.get_level_values(0).to_list()[7:]
+        level_1 = df.columns.get_level_values(1).to_list()[:7]
+
+        # 상위 인덱스 제거
+        df = df.droplevel(level=0, axis=1)
+        df.columns = level_1+level_0
+        logger.info(df.columns)
+        
+        # 필요한 데이터 select
+        columns_of_interest = ["유동자산", "비유동자산", "자산총계", "유동부채", "비유동부채", "부채총계", "자본총계", "부채와자본총계"]
+        filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
+
+        # 공시일 별로 금액을 melt
+        days_columns = filterd_bs.columns[7:]
+        logger.info(days_columns)
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        return melted_df
+    
+    def _prepare_is_fs(self, df: DataFrame):
+        """
+        손익계산서를 정리하는 함수
+        """
+        level_0 = df.columns.get_level_values(0).to_list()[5:]
+        level_1 = df.columns.get_level_values(1).to_list()[:5]
+
+        # 상위 인덱스 제거
+        df = df.droplevel(level=0, axis=1)
+        df.columns = level_1+level_0
+        logger.info(df.columns)
+        
+        # 필요한 데이터 select
+        columns_of_interest = ["수익(매출액)","매출원가","매출총이익","판매비와관리비","영업이익","당기순이익(손실)","기본주당이익(손실)"]
+        filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
+
+        # 공시일 별로 금액을 melt
+        days_columns = filterd_bs.columns[5:]
+        logger.info(days_columns)
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:5], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        
+        return melted_df
+    
+    def _prepare_cis_fs(self, df: DataFrame):
+        """
+        포괄손익계산서를 정리하는 함수
+        """
+        level_0 = df.columns.get_level_values(0).to_list()[7:]
+        level_1 = df.columns.get_level_values(1).to_list()[:7]
+
+        # 상위 인덱스 제거
+        df = df.droplevel(level=0, axis=1)
+        df.columns = level_1+level_0
+        logger.info(df.columns)
+        
+        # 필요한 데이터 select
+        columns_of_interest = ["당기순이익(손실)", "총포괄손익"]
+        filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
+
+        # 공시일 별로 금액을 melt
+        days_columns = filterd_bs.columns[7:]
+        logger.info(days_columns)
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        return melted_df
+    
+    def _prepare_cf_fs(self, df: DataFrame):
+        """
+        현금흐름표를 정리하는 함수
+        """
+        level_0 = df.columns.get_level_values(0).to_list()[7:]
+        level_1 = df.columns.get_level_values(1).to_list()[:7]
+
+        # 상위 인덱스 제거
+        df = df.droplevel(level=0, axis=1)
+        df.columns = level_1+level_0
+        logger.info(df.columns)
+        
+        # 필요한 데이터 select
+        columns_of_interest = ["영업활동 현금흐름", "투자활동 현금흐름", "재무활동 현금흐름", "기초의 현금및현금성자산", "기말의 현금및현금성자산"]
+        filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
+
+        # 공시일 별로 금액을 melt
+        days_columns = filterd_bs.columns[7:]
+        logger.info(days_columns)
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        return melted_df
 
     def _get_fs(self, report: Report):
         try:
@@ -37,16 +135,23 @@ class DartCollector():
             fs_type = ['bs', 'is', 'cis', 'cf']
             for f in fs_type:
                 if not fs[f].empty:
-                    # logger.info(fs[f].head())
-                    df_fs = fs[f]
-                    df_fs['rcp_no'] = report.rcp_no
-                    df_fs['report_nm'] = report.report_nm
-                    df_fs['rcept_dt'] = report.rcept_dt
-                    df_fs['available_at'] = report.rcept_dt
-                    df_fs['stock_code'] = report.stock_code
-                    df_fs['corp_code'] = report.corp_code
-                    df_fs['corp_name'] = report.corp_name
-                    return {f"{f}": df_fs}
+                    if f == 'bs':
+                        prepared_df = self._prepare_bs_fs(fs[f])
+                    if f == 'is':
+                        prepared_df = self._prepare_is_fs(fs[f])
+                    if f == 'cis':
+                        prepared_df = self._prepare_cis_fs(fs[f])
+                    if f == 'cf':
+                        prepared_df = self._prepare_cf_fs(fs[f])
+
+                    prepared_df['rcp_no'] = report.rcp_no
+                    prepared_df['report_nm'] = report.report_nm
+                    prepared_df['rcept_dt'] = report.rcept_dt
+                    prepared_df['available_at'] = report.rcept_dt
+                    prepared_df['stock_code'] = report.stock_code
+                    prepared_df['corp_code'] = report.corp_code
+                    prepared_df['corp_name'] = report.corp_name
+                    return {f"{f}": prepared_df}
         except NotFoundConsolidated as e:
             logger.info('Warning: NotFoundConsolidated')
             return {}
@@ -54,69 +159,105 @@ class DartCollector():
             logger.info('Warning: NoDataReceived')
             return {}
         except Exception as ex:
-            logger.info(f'Warning: {ex}')
+            logger.info(f'Warning[Exception]: {ex}')
             return {}
         return {}
 
-    def check_all_company(self):
-        # result = self.dart.get_corp_list().find_by_stock_code('126600') # -> [00599595]BGF에코머티리얼즈
-        # logger.info(result)
-        
-        # 2012년 01월 01일 부터 연결재무제표 검색
-        # fs = samsung.extract_fs(bgn_de='20200101') 와 동일
-        # corp_code = '00126380'
-        # fs = self.dart.fs.extract(corp_code=corp_code, bgn_de='20230101', report_tp=['annual', 'half', 'quarter'])
+    def dart_fs_by_corp(self, from_date: str, to_date: str):
+        try:
+            from_date = from_date if from_date and isinstance(from_date, str) else self._today()
+            to_date = to_date if to_date and isinstance(to_date, str) else self._today()
 
-        df_bs = DataFrame() # 연결재무상태표
-        df_is = DataFrame() # 연결손익계산서
-        df_cis = DataFrame() # 연결포괄손익계산서
-        df_cf = DataFrame() # 현금흐름표
-
-        for idx in ('A001', 'A002', 'A003'): # 년, 반기, 분기
-            # 한달 씩 데이터를 수집한다.
-            reports = self.dart.filings.search(bgn_de='20230101', end_de='20230201',
-                                        pblntf_detail_ty=idx, page_count=100,
-                                        last_reprt_at="N")
+            df_bs = DataFrame() # 연결재무상태표
+            df_is = DataFrame() # 연결손익계산서
+            df_cis = DataFrame() # 연결포괄손익계산서
+            df_cf = DataFrame() # 현금흐름표
             
-            for _ in range(len(reports)):
-                report = reports.pop(0)
-                extract_fs = self._get_fs(report)
-                if 'bs' in extract_fs.keys():
-                    new_fs = extract_fs['bs']
-                    level_0 = new_fs.columns.get_level_values(0).to_list()[7:]
-                    level_1 = new_fs.columns.get_level_values(1).to_list()[:7]
-                    
-                    new_fs.droplevel(axis=1,level=0)
+            # NOTE 하위 기업 
+            under_20 = pd.read_csv('sorted_result_under_50.csv')
+            ticker_list = under_20['티커']
+            # 모든 상장된 기업 리스트 불러오기
+            corp_list = self.dart.get_corp_list()
 
-                    set_col = level_1+level_0
-                    logger.info(set_col)
-                    new_fs.columns = set_col
+            for idx, ticker in enumerate(ticker_list):
+                corp = corp_list.find_by_stock_code(ticker)
+                logger.info(f'[{idx}/{len(ticker_list)}]corp: {corp}, from_date:{from_date}, to_date:{to_date}')
+                if corp:
+                    # samsung = corp_list.find_by_corp_name(corp_code=corp_code)
+                    # fs = samsung.extract_fs(bgn_de='20120101') 와 동일
+                    try:
+                        extract_fs = self.dart.fs.extract(corp_code=corp.corp_code, bgn_de=from_date)
+                        
+                        df_bs = pd.concat([df_bs, extract_fs['bs']], ignore_index=True)
+                        df_is = pd.concat([df_is, extract_fs['is']], ignore_index=True)
+                        df_cis = pd.concat([df_cis, extract_fs['cis']], ignore_index=True)
+                        df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
+                    except NotFoundConsolidated as e:
+                        logger.info('Warning: NotFoundConsolidated')
+                    except NoDataReceived as e:
+                        logger.info('Warning: NoDataReceived')
+                    except Exception as ex:
+                        logger.info(f'Warning[Exception]: {ex}')
 
-                    logger.info(new_fs.head())
-                    # NOTE 사용가능한 데이터 유동자산, 비유동자산, 자산총계, 유동부채, 비유동부채, 부채총계, 자본총계, 부채와자본총계
-                    columns_of_interest = ["유동자산", "비유동자산", "자산총계", "유동부채", "비유동부채", "부채총계", "자본총계", "부채와자본총계"]
-
-                    filterd_bs = new_fs[new_fs['label_ko'].isin(columns_of_interest)]
-                    filterd_bs.to_csv('asfasdf.csv')
-                    logger.info(filterd_bs.head())
-
-                    date_df = filterd_bs.melt(id_vars=filterd_bs.columns[1], value_vars=filterd_bs.columns[-1])
-                    logger.info(date_df.head())
-
-                    df_bs = pd.concat([df_bs, filterd_bs], ignore_index=True)
-                if 'is' in extract_fs.keys():
-                    df_is = pd.concat([df_is, extract_fs['is']], ignore_index=True)
-                if 'cis' in extract_fs.keys():
-                    df_cis = pd.concat([df_cis, extract_fs['cis']], ignore_index=True)
-                if 'cf' in extract_fs.keys():
-                    df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
-
-        df_bs.to_csv('연결재무상태표.csv')
-        df_is.to_csv('연결손익계산서.csv')
-        df_cis.to_csv('연결포괄손익계산서.csv')
-        df_cf.to_csv('현금흐름표.csv')
-        
+            df_bs.to_csv(f'연결재무상태표_{from_date}_{to_date}.csv')
+            df_is.to_csv(f'연결손익계산서_{from_date}_{to_date}.csv')
+            df_cis.to_csv(f'연결포괄손익계산서_{from_date}_{to_date}.csv')
+            df_cf.to_csv(f'현금흐름표_{from_date}_{to_date}.csv')
+        except OverQueryLimit as e:
+            logger.info(f'Warning[OverQueryLimit]: {e}')
+            self.set_next_api_key()
+            return self.dart_fs_by_corp(from_date, to_date)
         return
+
+
+    def dart_fs_by_day(self, from_date: str, to_date: str):
+        try:
+            # 2012년 01월 01일 부터 연결재무제표 검색
+            # fs = samsung.extract_fs(bgn_de='20200101') 와 동일
+            # corp_code = '00126380'
+            from_date = from_date if from_date and isinstance(from_date, str) else self._today()
+            to_date = to_date if to_date and isinstance(to_date, str) else self._today()
+
+            df_bs = DataFrame() # 연결재무상태표
+            df_is = DataFrame() # 연결손익계산서
+            df_cis = DataFrame() # 연결포괄손익계산서
+            df_cf = DataFrame() # 현금흐름표
+            
+            bgn_date = ''
+            end_date = from_date
+            while end_date <= to_date:
+                bgn_date = end_date
+                end_date = (dt.strptime(bgn_date, "%Y%m%d") + timedelta(weeks=4)).strftime("%Y%m%d")
+                logger.info(f"dart_all_fs - bgn_date[{bgn_date}] ~ end_date[{end_date}]")
+
+                for idx in ('A001', 'A002', 'A003'): # 년, 반기, 분기
+                    # 한달 씩 데이터를 수집한다.
+                    reports = self.dart.filings.search(bgn_de=bgn_date, end_de=end_date,
+                                                pblntf_detail_ty=idx, page_count=100,
+                                                last_reprt_at="N")
+                    
+                    for _ in range(len(reports)):
+                        report = reports.pop(0)
+                        extract_fs = self._get_fs(report)
+                        if 'bs' in extract_fs.keys():
+                            df_bs = pd.concat([df_bs, extract_fs['bs']], ignore_index=True)
+                        if 'is' in extract_fs.keys():
+                            df_is = pd.concat([df_is, extract_fs['is']], ignore_index=True)
+                        if 'cis' in extract_fs.keys():
+                            df_cis = pd.concat([df_cis, extract_fs['cis']], ignore_index=True)
+                        if 'cf' in extract_fs.keys():
+                            df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
+                    sleep(1)
+
+            df_bs.to_csv(f'연결재무상태표_{from_date}_{to_date}.csv')
+            df_is.to_csv(f'연결손익계산서_{from_date}_{to_date}.csv')
+            df_cis.to_csv(f'연결포괄손익계산서_{from_date}_{to_date}.csv')
+            df_cf.to_csv(f'현금흐름표_{from_date}_{to_date}.csv')
+        except OverQueryLimit as e:
+            logger.info(f'Warning[OverQueryLimit]: {e}')
+            self.set_next_api_key()
+            return self.dart_fs_by_day(bgn_date, end_date)
+        return 
 
 
 class KrxCollector():
