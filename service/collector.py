@@ -18,9 +18,11 @@ from dart_fss.errors.errors import NotFoundConsolidated, NoDataReceived, OverQue
 
 class DartCollector():
     # NOTE 환경 변수로 빼놓기
-    api_key = ["f25039bc5c5af07e0c9a788366ecfd58ca72674f",
-               "d5ea58abd9def006340a95d00655011fb1a8255b",
-               "3355e181b6492517bf43b4d3a2ce3c14ebd7c4bd"]
+    api_key = [
+        "d5ea58abd9def006340a95d00655011fb1a8255b",
+        "f25039bc5c5af07e0c9a788366ecfd58ca72674f",
+        "3355e181b6492517bf43b4d3a2ce3c14ebd7c4bd"
+    ]
     key_sequence = 0
     dart: Dart
 
@@ -43,6 +45,7 @@ class DartCollector():
         """
         재무상태표를 정리하는 함수
         """
+        logger.info("재무상태표")
         level_0 = df.columns.get_level_values(0).to_list()[7:]
         level_1 = df.columns.get_level_values(1).to_list()[:7]
 
@@ -65,6 +68,7 @@ class DartCollector():
         """
         손익계산서를 정리하는 함수
         """
+        logger.info("손익계산서")
         level_0 = df.columns.get_level_values(0).to_list()[5:]
         level_1 = df.columns.get_level_values(1).to_list()[:5]
 
@@ -88,6 +92,7 @@ class DartCollector():
         """
         포괄손익계산서를 정리하는 함수
         """
+        logger.info("포괄손익계산서")
         level_0 = df.columns.get_level_values(0).to_list()[7:]
         level_1 = df.columns.get_level_values(1).to_list()[:7]
 
@@ -110,6 +115,7 @@ class DartCollector():
         """
         현금흐름표를 정리하는 함수
         """
+        logger.info("현금흐름")
         level_0 = df.columns.get_level_values(0).to_list()[7:]
         level_1 = df.columns.get_level_values(1).to_list()[:7]
 
@@ -128,11 +134,31 @@ class DartCollector():
         melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
         return melted_df
 
-    def _get_fs(self, report: Report):
+    def validate_report_by_fix_date(self, report, from_date):
+        flag_date = int(from_date[:6])
+
+        report_nm = report.report_nm
+
+        date_pattern = r'\((\d{4})\.(\d{2})\)'
+        match = re.search(date_pattern, report_nm)
+
+        if not match:
+            return None
+        
+        # 정규 표현식에서 추출한 년도와 월을 연결
+        extracted_date = int(match.group(1) + match.group(2))
+        if flag_date <= extracted_date:
+            logger.info(f"{flag_date} <= {extracted_date}")
+            return report
+        logger.info(f'Report is before requested from_date[{from_date}]')
+        return None
+
+    def _get_fs(self, report: Report, from_date:str):
         try:
-            logger.info(report)
+            report = self.validate_report_by_fix_date(report, from_date)
             fs = analyze_report(report)
-            fs_type = ['bs', 'is', 'cis', 'cf']
+            fs_type = ('bs', 'is', 'cis', 'cf')
+            fs_pack = {}
             for f in fs_type:
                 if not fs[f].empty:
                     if f == 'bs':
@@ -151,7 +177,7 @@ class DartCollector():
                     prepared_df['stock_code'] = report.stock_code
                     prepared_df['corp_code'] = report.corp_code
                     prepared_df['corp_name'] = report.corp_name
-                    return {f"{f}": prepared_df}
+                    fs_pack[f] = prepared_df
         except NotFoundConsolidated as e:
             logger.info('Warning: NotFoundConsolidated')
             return {}
@@ -161,7 +187,7 @@ class DartCollector():
         except Exception as ex:
             logger.info(f'Warning[Exception]: {ex}')
             return {}
-        return {}
+        return fs_pack
 
     def dart_fs_by_corp(self, from_date: str, to_date: str):
         try:
@@ -173,25 +199,38 @@ class DartCollector():
             df_cis = DataFrame() # 연결포괄손익계산서
             df_cf = DataFrame() # 현금흐름표
             
-            # NOTE 하위 기업 
-            under_20 = pd.read_csv('sorted_result_under_50.csv')
-            ticker_list = under_20['티커']
+            # NOTE 23~24년에 있었던 시가총액 하위 30% 기업 
+            sorted_list = pd.read_csv('market_cap_by_ticker_kospi.csv').sort_values(by='시가총액', ascending=False)
+            ticker_list = sorted_list.head(int(len(sorted_list)*0.2))['티커'].drop_duplicates().tolist()
+            logger.info(f"{len(ticker_list)}:  {ticker_list}")
+            # ticker_list = under_20['티커']
+            
             # 모든 상장된 기업 리스트 불러오기
             corp_list = self.dart.get_corp_list()
 
             for idx, ticker in enumerate(ticker_list):
                 corp = corp_list.find_by_stock_code(ticker)
-                logger.info(f'[{idx}/{len(ticker_list)}]corp: {corp}, from_date:{from_date}, to_date:{to_date}')
+                logger.info(f'[{idx}/{len(ticker_list)}] ticker:{ticker}  corp: {corp}, from_date:{from_date}, to_date:{to_date}')
                 if corp:
                     # samsung = corp_list.find_by_corp_name(corp_code=corp_code)
                     # fs = samsung.extract_fs(bgn_de='20120101') 와 동일
                     try:
-                        extract_fs = self.dart.fs.extract(corp_code=corp.corp_code, bgn_de=from_date)
-                        
-                        df_bs = pd.concat([df_bs, extract_fs['bs']], ignore_index=True)
-                        df_is = pd.concat([df_is, extract_fs['is']], ignore_index=True)
-                        df_cis = pd.concat([df_cis, extract_fs['cis']], ignore_index=True)
-                        df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
+                        for idx in ('A001', 'A002', 'A003'): # 년, 반기, 분기
+                            reports = self.dart.filings.search(corp_code=corp.corp_code, bgn_de=from_date, pblntf_detail_ty=idx, page_count=100, last_reprt_at="N")
+                            reports_count = len(reports)
+                            for idx, _ in enumerate(range(reports_count)):
+                                report = reports.pop(0)
+                                logger.info(f"{idx+1}/{reports_count}\n{report}")
+                                extract_fs = self._get_fs(report, from_date)
+                                if 'bs' in extract_fs.keys():
+                                    df_bs = pd.concat([df_bs, extract_fs['bs']], ignore_index=True)
+                                if 'is' in extract_fs.keys():
+                                    df_is = pd.concat([df_is, extract_fs['is']], ignore_index=True)
+                                if 'cis' in extract_fs.keys():
+                                    df_cis = pd.concat([df_cis, extract_fs['cis']], ignore_index=True)
+                                if 'cf' in extract_fs.keys():
+                                    df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
+                            sleep(1)
                     except NotFoundConsolidated as e:
                         logger.info('Warning: NotFoundConsolidated')
                     except NoDataReceived as e:

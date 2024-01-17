@@ -1,0 +1,662 @@
+,concept_id,label_ko,label_en,class0,class1,class2,class3,fs_date,amount,rcp_no,report_nm,rcept_dt,available_at,stock_code,corp_code,corp_name
+0,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,68846398820.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+1,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,28617053043.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+2,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,97463451863.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+3,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,86096854972.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+4,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,3812863150.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+5,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,89909718122.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+6,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,7553733741.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+7,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,45536574854.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+8,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,62559959031.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+9,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,108096533885.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+10,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,82067288386.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+11,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,20999720846.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+12,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,103067009232.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+13,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,5029524653.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+14,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20201231,12651239921.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+15,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20201231,56579844930.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+16,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20201231,69231084851.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+17,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20201231,40866851573.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+18,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20201231,5315416414.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+19,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20201231,46182267987.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+20,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20201231,23048816864.0,20230727000454,[기재정정]사업보고서 (2022.12),20230727,20230727,030790,00273615,비케이탑스
+21,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,68846398820.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+22,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,28617053043.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+23,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,97463451863.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+24,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,86096854972.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+25,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,3812863150.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+26,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,89909718122.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+27,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,7553733741.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+28,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,45536574854.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+29,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,62559959031.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+30,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,108096533885.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+31,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,82067288386.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+32,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,20999720846.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+33,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,103067009232.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+34,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,5029524653.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+35,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20201231,12651239921.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+36,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20201231,56579844930.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+37,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20201231,69231084851.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+38,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20201231,40866851573.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+39,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20201231,5315416414.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+40,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20201231,46182267987.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+41,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20201231,23048816864.0,20230323001395,사업보고서 (2022.12),20230323,20230323,030790,00273615,비케이탑스
+42,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+43,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+44,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+45,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+46,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+47,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+48,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+49,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,208120718755.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+50,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,120045348198.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+51,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,328166066953.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+52,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,45979873534.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+53,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,19038869526.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+54,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,65018743060.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+55,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,263147323893.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+56,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,190326178890.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+57,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,138841180912.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+58,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,329167359802.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+59,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,46433517001.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+60,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,19671354318.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+61,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,66104871319.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+62,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,263062488483.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+63,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20201231,175142389567.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+64,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20201231,133205818257.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+65,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20201231,308348207824.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+66,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20201231,39442631776.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+67,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20201231,20999586853.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+68,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20201231,60442218629.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+69,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20201231,247905989195.0,20230322001299,사업보고서 (2022.12),20230322,20230322,025530,00181943,에스제이엠홀딩스
+70,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+71,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+72,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+73,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+74,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+75,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+76,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+77,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230630,216701280260.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+78,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230630,118207317968.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+79,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230630,334908598228.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+80,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230630,47447300838.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+81,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230630,15635085714.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+82,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230630,63082386552.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+83,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230630,271826211676.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+84,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,208120718755.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+85,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,120045348198.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+86,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,328166066953.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+87,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,45979873534.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+88,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,19038869526.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+89,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,65018743060.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+90,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,263147323893.0,20230814001367,반기보고서 (2023.06),20230814,20230814,025530,00181943,에스제이엠홀딩스
+91,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+92,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+93,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+94,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+95,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+96,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+97,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+98,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,195445294738.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+99,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,141117076156.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+100,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,336562370894.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+101,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,42401845775.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+102,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,20338713398.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+103,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,62740559173.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+104,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,273821811721.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+105,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,190326178890.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+106,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,142595309222.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+107,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,332921488112.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+108,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,46433517001.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+109,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,19671354318.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+110,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,66104871319.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+111,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,266816616793.0,20220816000974,반기보고서 (2022.06),20220816,20220816,025530,00181943,에스제이엠홀딩스
+112,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+113,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+114,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+115,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+116,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+117,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+118,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,"[D210000] 재무상태표, 유동/비유동법 - 연결 | Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+119,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20230930,223830494413.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+120,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20230930,112371220555.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+121,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20230930,336201714968.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+122,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20230930,44942601054.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+123,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20230930,12966337769.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+124,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20230930,57908938823.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+125,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,20230930,278292776145.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+126,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20221231,208120718755.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+127,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20221231,120045348198.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+128,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20221231,328166066953.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+129,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20221231,45979873534.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+130,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20221231,19038869526.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+131,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20221231,65018743060.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+132,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,20221231,263147323893.0,20231114001472,분기보고서 (2023.09),20231114,20231114,025530,00181943,에스제이엠홀딩스
+133,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+134,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+135,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+136,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+137,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+138,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+139,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+140,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230331,217644422287.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+141,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230331,121067738296.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+142,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230331,338712160583.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+143,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230331,48989200902.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+144,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230331,19998951960.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+145,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230331,68988152862.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+146,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230331,269724007721.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+147,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,208120718755.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+148,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,120045348198.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+149,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,328166066953.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+150,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,45979873534.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+151,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,19038869526.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+152,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,65018743060.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+153,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,263147323893.0,20230515002475,분기보고서 (2023.03),20230515,20230515,025530,00181943,에스제이엠홀딩스
+154,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+155,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+156,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+157,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+158,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+159,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+160,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+161,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220930,210565400233.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+162,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220930,139029448715.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+163,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220930,349594848948.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+164,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220930,43557427337.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+165,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220930,21450917448.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+166,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220930,65008344785.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+167,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220930,284586504163.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+168,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,190326178890.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+169,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,138841180912.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+170,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,329167359802.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+171,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,46433517001.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+172,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,19671354318.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+173,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,66104871319.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+174,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,263062488483.0,20221223000423,[기재정정]분기보고서 (2022.09),20221223,20221223,025530,00181943,에스제이엠홀딩스
+175,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+176,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+177,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+178,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+179,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+180,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+181,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+182,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220930,210565400233.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+183,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220930,142582460220.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+184,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220930,353147860453.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+185,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220930,43557427337.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+186,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220930,21450848504.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+187,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220930,65008275841.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+188,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220930,288139584612.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+189,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,190326178890.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+190,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,142595309222.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+191,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,332921488112.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+192,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,46433517001.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+193,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,19671354318.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+194,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,66104871319.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+195,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,266816616793.0,20221114000890,분기보고서 (2022.09),20221114,20221114,025530,00181943,에스제이엠홀딩스
+196,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+197,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+198,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+199,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+200,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+201,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+202,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+203,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220331,187696756223.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+204,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220331,142439520939.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+205,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220331,330136277162.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+206,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220331,42781415522.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+207,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220331,17566003793.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+208,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220331,60347419315.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+209,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220331,269788857847.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+210,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,190326178890.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+211,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,142595309222.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+212,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,332921488112.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+213,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,46433517001.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+214,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,19671354318.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+215,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,66104871319.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+216,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,266816616793.0,20220516000960,분기보고서 (2022.03),20220516,20220516,025530,00181943,에스제이엠홀딩스
+217,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+218,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+219,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+220,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+221,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+222,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+223,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+224,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,160075611509.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+225,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,90233257903.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+226,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,250308869412.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+227,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,35075566957.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+228,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,18767478801.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+229,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,53843045758.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+230,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,196465823654.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+231,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,155406543949.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+232,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,89613372574.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+233,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,245019916523.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+234,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,36947886255.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+235,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,18593964529.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+236,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,55541850784.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+237,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,189478065739.0,20220816000740,반기보고서 (2022.06),20220816,20220816,123700,00815369,에스제이엠
+238,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+239,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+240,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+241,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+242,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+243,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+244,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,"[D210000] Statement of financial position, current/non-current - Consolidated financial statements (Unit: KRW)",,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+245,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220331,153424700384.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+246,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220331,88618192634.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+247,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220331,242042893018.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+248,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220331,32345662309.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+249,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220331,16250805543.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+250,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220331,48596467852.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+251,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220331,193446425166.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+252,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,155406543949.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+253,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,89613372574.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+254,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,245019916523.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+255,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,36947886255.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+256,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,18593964529.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+257,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,55541850784.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+258,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,189478065739.0,20220516000689,분기보고서 (2022.03),20220516,20220516,123700,00815369,에스제이엠
+259,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230630,371272864423.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+260,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230630,302808992649.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+261,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230630,674081857072.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+262,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230630,59545521134.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+263,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230630,33328280418.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+264,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230630,92873801552.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+265,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230630,581208055520.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+266,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+267,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+268,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+269,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+270,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+271,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+272,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+273,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20210630,263446625122.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+274,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20210630,358705388756.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+275,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20210630,622152013878.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+276,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20210630,43707443934.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+277,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20210630,27068768918.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+278,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20210630,70776212852.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+279,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20210630,551375801026.0,20230919000247,사업보고서 (2023.06),20230919,20230919,021820,00134316,세원정공
+280,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+281,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+282,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+283,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+284,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+285,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+286,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+287,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20210630,263446625122.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+288,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20210630,358705388756.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+289,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20210630,622152013878.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+290,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20210630,43707443934.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+291,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20210630,27068768918.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+292,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20210630,70776212852.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+293,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20210630,551375801026.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+294,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20200630,249177282038.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+295,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20200630,363626096018.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+296,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20200630,612803378056.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+297,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20200630,71204411886.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+298,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20200630,23636728113.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+299,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20200630,94841139999.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+300,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20200630,517962238057.0,20230228006867,[기재정정]사업보고서 (2022.06),20230302,20230302,021820,00134316,세원정공
+301,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+302,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+303,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+304,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+305,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+306,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+307,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+308,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20210630,263446625122.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+309,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20210630,358705388756.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+310,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20210630,622152013878.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+311,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20210630,43707443934.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+312,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20210630,27068768918.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+313,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20210630,70776212852.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+314,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20210630,551375801026.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+315,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20200630,249177282038.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+316,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20200630,363626096018.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+317,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20200630,612803378056.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+318,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20200630,71204411886.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+319,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20200630,23636728113.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+320,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20200630,94841139999.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+321,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20200630,517962238057.0,20220922000318,사업보고서 (2022.06),20220922,20220922,021820,00134316,세원정공
+322,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,296731323377.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+323,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,351984490523.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+324,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,648715813900.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+325,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,75278253066.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+326,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,27717338301.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+327,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,102995591367.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+328,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,545720222533.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+329,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+330,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+331,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+332,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+333,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+334,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+335,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20230228006872,[기재정정]반기보고서 (2022.12),20230302,20230302,021820,00134316,세원정공
+336,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,296731323377.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+337,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,351984490523.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+338,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,648715813900.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+339,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,75278253066.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+340,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,27717338301.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+341,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,102995591367.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+342,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,545720222533.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+343,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+344,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+345,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+346,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+347,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+348,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+349,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20230214000971,반기보고서 (2022.12),20230214,20230214,021820,00134316,세원정공
+350,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20230930,366491828010.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+351,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20230930,335459413012.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+352,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20230930,701951241022.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+353,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20230930,72231881375.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+354,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20230930,34475591266.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+355,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20230930,106707472641.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+356,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,20230930,595243768381.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+357,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20230630,371272864423.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+358,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20230630,302808992649.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+359,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20230630,674081857072.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+360,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20230630,59545521134.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+361,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20230630,33328280418.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+362,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20230630,92873801552.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+363,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,20230630,581208055520.0,20231114002299,분기보고서 (2023.09),20231114,20231114,021820,00134316,세원정공
+364,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230331,379107089991.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+365,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230331,402069003900.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+366,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230331,781176093891.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+367,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230331,101122492669.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+368,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230331,28801052108.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+369,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230331,129923544777.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+370,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230331,651252549114.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+371,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+372,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+373,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+374,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+375,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+376,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+377,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20230515002128,분기보고서 (2023.03),20230515,20230515,021820,00134316,세원정공
+378,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220930,317820819283.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+379,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220930,399186946687.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+380,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220930,717007765970.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+381,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220930,122601044009.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+382,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220930,28094579122.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+383,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220930,150695623131.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+384,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220930,566312142839.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+385,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+386,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+387,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+388,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+389,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+390,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+391,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20230228006870,[기재정정]분기보고서 (2022.09),20230302,20230302,021820,00134316,세원정공
+392,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220331,265573206184.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+393,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220331,374069390615.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+394,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220331,639642596799.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+395,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220331,38700840878.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+396,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220331,28106016354.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+397,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220331,66806857232.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+398,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220331,572835739567.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+399,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20210630,263446625122.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+400,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20210630,358705388756.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+401,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20210630,622152013878.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+402,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20210630,43707443934.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+403,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20210630,27068768918.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+404,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20210630,70776212852.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+405,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20210630,551375801026.0,20230228006865,[기재정정]분기보고서 (2022.03),20230302,20230302,021820,00134316,세원정공
+406,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220930,317820819283.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+407,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220930,399186946687.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+408,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220930,717007765970.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+409,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220930,122601044009.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+410,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220930,28094579122.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+411,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220930,150695623131.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+412,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220930,566312142839.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+413,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,300912871770.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+414,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,327918972537.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+415,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,628831844307.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+416,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,50087988802.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+417,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,27559419744.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+418,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,77647408546.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+419,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,551184435761.0,20221114000961,분기보고서 (2022.09),20221114,20221114,021820,00134316,세원정공
+420,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220331,265573206184.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+421,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220331,374069390615.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+422,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220331,639642596799.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+423,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220331,38700840878.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+424,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220331,28106016354.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+425,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220331,66806857232.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+426,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220331,572835739567.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+427,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20210630,263446625122.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+428,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20210630,358705388756.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+429,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20210630,622152013878.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+430,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20210630,43707443934.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+431,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20210630,27068768918.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+432,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20210630,70776212852.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+433,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20210630,551375801026.0,20220516002060,분기보고서 (2022.03),20220516,20220516,021820,00134316,세원정공
+434,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,187859476408.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+435,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,223304708480.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+436,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,411164184888.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+437,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,210046621229.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+438,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,63452671575.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+439,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,273499292804.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+440,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,137664892084.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+441,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20221231,411164184888.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+442,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,157837676941.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+443,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,196124351366.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+444,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,353962028307.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+445,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,184619476426.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+446,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,48242778909.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+447,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,232862255335.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+448,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,121099772972.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+449,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20211231,353962028307.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+450,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20201231,148943027920.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+451,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20201231,170819509374.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+452,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20201231,319762537294.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+453,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20201231,169346299928.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+454,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20201231,35992143774.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+455,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20201231,205338443702.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+456,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20201231,114424093592.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+457,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20201231,319762537294.0,20230322000936,사업보고서 (2022.12),20230322,20230322,023810,00180795,인팩
+458,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230630,208626896393.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+459,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230630,255396650435.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+460,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230630,464023546828.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+461,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230630,243170810919.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+462,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230630,76714253488.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+463,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230630,319885064407.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+464,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230630,144138482421.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+465,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20230630,464023546828.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+466,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,187859476408.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+467,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,223304708480.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+468,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,411164184888.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+469,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,210046621229.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+470,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,63452671575.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+471,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,273499292804.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+472,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,137664892084.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+473,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20221231,411164184888.0,20230814002175,반기보고서 (2023.06),20230814,20230814,023810,00180795,인팩
+474,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,176680695485.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+475,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,215014297635.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+476,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,391694993120.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+477,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,202206659453.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+478,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,63493133058.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+479,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,265699792511.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+480,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,125995200609.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+481,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20220630,391694993120.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+482,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,157837676941.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+483,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,196124351366.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+484,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,353962028307.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+485,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,184619476426.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+486,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,48242778909.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+487,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,232862255335.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+488,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,121099772972.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+489,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20211231,353962028307.0,20220812001099,반기보고서 (2022.06),20220812,20220812,023810,00180795,인팩
+490,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20230930,200122779738.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+491,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20230930,277009377322.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+492,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20230930,477132157060.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+493,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20230930,244836013460.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+494,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20230930,79426928463.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+495,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20230930,324262941923.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+496,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,20230930,152869215137.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+497,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [개요],부채와자본총계,,,20230930,477132157060.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+498,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20221231,187859476408.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+499,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20221231,223304708480.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+500,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20221231,411164184888.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+501,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20221231,210046621229.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+502,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20221231,63452671575.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+503,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20221231,273499292804.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+504,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본 [개요],자본총계,,20221231,137664892084.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+505,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [개요],부채와자본총계,,,20221231,411164184888.0,20231114002217,분기보고서 (2023.09),20231114,20231114,023810,00180795,인팩
+506,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230331,201154436758.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+507,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230331,244231802426.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+508,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230331,445386239184.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+509,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230331,226718224429.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+510,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230331,75889797635.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+511,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230331,302608022064.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+512,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230331,142778217120.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+513,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20230331,445386239184.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+514,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,187859476408.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+515,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,223304708480.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+516,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,411164184888.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+517,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,210046621229.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+518,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,63452671575.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+519,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,273499292804.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+520,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,137664892084.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+521,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20221231,411164184888.0,20230515001853,분기보고서 (2023.03),20230515,20230515,023810,00180795,인팩
+522,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220930,196683808925.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+523,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220930,223118764168.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+524,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220930,419802573093.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+525,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220930,223712023259.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+526,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220930,66013357438.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+527,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220930,289725380697.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+528,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220930,130077192396.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+529,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20220930,419802573093.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+530,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,157837676941.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+531,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,196124351366.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+532,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,353962028307.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+533,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,184619476426.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+534,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,48242778909.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+535,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,232862255335.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+536,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,121099772972.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+537,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20211231,353962028307.0,20221114001763,분기보고서 (2022.09),20221114,20221114,023810,00180795,인팩
+538,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220331,170349701687.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+539,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220331,202102122884.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+540,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220331,372451824571.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+541,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220331,200328714982.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+542,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220331,49785844897.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+543,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220331,250114559879.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+544,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220331,122337264692.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+545,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20220331,372451824571.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+546,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,157837676941.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+547,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,196124351366.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+548,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,353962028307.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+549,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,184619476426.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+550,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,48242778909.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+551,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,232862255335.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+552,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,121099772972.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+553,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20211231,353962028307.0,20220517000098,[기재정정]분기보고서 (2022.03),20220517,20220517,023810,00180795,인팩
+554,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220331,170349701687.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+555,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220331,202102122884.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+556,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220331,372451824571.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+557,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220331,200328714982.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+558,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220331,49785844897.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+559,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220331,250114559879.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+560,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220331,122337264692.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+561,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20220331,372451824571.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+562,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,157837676941.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+563,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,196124351366.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+564,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,353962028307.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+565,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,184619476426.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+566,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,48242778909.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+567,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,232862255335.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+568,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,121099772972.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+569,ifrs-full_EquityAndLiabilities,부채와자본총계,Total equity and liabilities,재무상태표 [abstract],부채와자본총계,,,20211231,353962028307.0,20220516001629,분기보고서 (2022.03),20220516,20220516,023810,00180795,인팩
+570,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,59877889564.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+571,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,162905667402.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+572,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,222783556966.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+573,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,37345393005.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+574,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,65727379480.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+575,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,103072772485.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+576,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,119710784481.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+577,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,50833073328.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+578,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,192482754276.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+579,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,243315827604.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+580,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,32225043235.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+581,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,67445326264.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+582,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,99670369499.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+583,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,143645458105.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+584,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20201231,56998861335.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+585,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20201231,189084490690.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+586,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20201231,246083352025.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+587,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20201231,33016966086.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+588,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20201231,68908786857.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+589,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20201231,101925752943.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+590,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20201231,144157599082.0,20230316000542,사업보고서 (2022.12),20230316,20230316,004450,00129235,삼화왕관
+591,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230630,67498597163.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+592,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230630,154694681024.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+593,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230630,222193278187.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+594,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230630,42648847847.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+595,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230630,60207254120.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+596,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230630,102856101967.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+597,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230630,119337176220.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+598,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,59877889564.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+599,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,162905667402.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+600,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,222783556966.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+601,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,37345393005.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+602,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,65727379480.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+603,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,103072772485.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+604,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,119710784481.0,20230814000817,반기보고서 (2023.06),20230814,20230814,004450,00129235,삼화왕관
+605,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220630,53079331229.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+606,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220630,191026827304.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+607,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220630,244106158533.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+608,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220630,33312881615.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+609,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220630,70124082940.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+610,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220630,103436964555.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+611,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220630,140669193978.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+612,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,50833073328.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+613,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,192482754276.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+614,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,243315827604.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+615,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,32225043235.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+616,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,67445326264.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+617,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,99670369499.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+618,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,143645458105.0,20220816000478,반기보고서 (2022.06),20220816,20220816,004450,00129235,삼화왕관
+619,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20230930,65452204024.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+620,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20230930,140379186485.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+621,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20230930,205831390509.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+622,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20230930,41383400039.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+623,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20230930,55977753674.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+624,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20230930,97361153713.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+625,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본,자본총계,,20230930,108470236796.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+626,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [개요],자산 [개요],유동자산,,20221231,59877889564.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+627,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [개요],자산 [개요],비유동자산,,20221231,162905667402.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+628,ifrs-full_Assets,자산총계,Total assets,재무상태표 [개요],자산 [개요],자산총계,,20221231,222783556966.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+629,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [개요],부채 [개요],유동부채,,20221231,37345393005.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+630,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [개요],부채 [개요],비유동부채,,20221231,65727379480.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+631,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [개요],부채 [개요],부채총계,,20221231,103072772485.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+632,ifrs-full_Equity,자본총계,Total equity,재무상태표 [개요],자본,자본총계,,20221231,119710784481.0,20231114000199,분기보고서 (2023.09),20231114,20231114,004450,00129235,삼화왕관
+633,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20230331,65629757699.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+634,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20230331,157280823968.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+635,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20230331,222910581667.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+636,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20230331,42026972722.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+637,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20230331,63346151223.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+638,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20230331,105373123945.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+639,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20230331,117537457722.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+640,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20221231,59877889564.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+641,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20221231,162905667402.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+642,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20221231,222783556966.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+643,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20221231,37345393005.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+644,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20221231,65727379480.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+645,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20221231,103072772485.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+646,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20221231,119710784481.0,20230515000932,분기보고서 (2023.03),20230515,20230515,004450,00129235,삼화왕관
+647,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20220930,53258531300.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+648,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20220930,167651260169.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+649,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20220930,220909791469.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+650,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20220930,35726534408.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+651,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20220930,67313483356.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+652,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20220930,103040017764.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+653,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20220930,117869773705.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+654,ifrs-full_CurrentAssets,유동자산,Current assets,재무상태표 [abstract],자산 [abstract],유동자산,,20211231,50833073328.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+655,ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,재무상태표 [abstract],자산 [abstract],비유동자산,,20211231,192482754276.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+656,ifrs-full_Assets,자산총계,Total assets,재무상태표 [abstract],자산 [abstract],자산총계,,20211231,243315827604.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+657,ifrs-full_CurrentLiabilities,유동부채,Current liabilities,재무상태표 [abstract],부채 [abstract],유동부채,,20211231,32225043235.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+658,ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,재무상태표 [abstract],부채 [abstract],비유동부채,,20211231,67445326264.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+659,ifrs-full_Liabilities,부채총계,Total liabilities,재무상태표 [abstract],부채 [abstract],부채총계,,20211231,99670369499.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
+660,ifrs-full_Equity,자본총계,Total equity,재무상태표 [abstract],자본 [abstract],자본총계,,20211231,143645458105.0,20221114000892,분기보고서 (2022.09),20221114,20221114,004450,00129235,삼화왕관
