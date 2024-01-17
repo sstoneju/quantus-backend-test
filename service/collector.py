@@ -2,9 +2,10 @@ from calendar import month
 import os
 import re
 from time import sleep
+import traceback
 import pandas as pd
 from pandas import DataFrame
-from loguru import logger
+from logger import logger
 from datetime import datetime as dt, timedelta
 
 from pykrx.website.krx import market as krx_market
@@ -14,6 +15,7 @@ from dart_fss.fs.extract import analyze_report
 from dart_fss.filings.search_result import SearchResults
 from dart_fss.filings.reports import Report
 from dart_fss.errors.errors import NotFoundConsolidated, NoDataReceived, OverQueryLimit
+
 
 
 class DartCollector():
@@ -41,27 +43,38 @@ class DartCollector():
     def _today(self):
         return dt.today().strftime("%Y%m%d")
     
+    def _clean_colums(self, level_0_columns:list, level_1_columns:list):
+        new_col = []
+        flag_idx = 0
+        for idx, lv1_col in enumerate(level_1_columns):
+            if isinstance(lv1_col, str):
+                new_col.append(lv1_col)
+                flag_idx = idx
+            else:
+                new_col.append(level_0_columns[idx])
+        return new_col, flag_idx+1
+
     def _prepare_bs_fs(self, df: DataFrame):
         """
         재무상태표를 정리하는 함수
         """
         logger.info("재무상태표")
-        level_0 = df.columns.get_level_values(0).to_list()[7:]
-        level_1 = df.columns.get_level_values(1).to_list()[:7]
-
+        level_0_col = df.columns.get_level_values(0).to_list()
+        level_1_col = df.columns.get_level_values(1).to_list()
+                
         # 상위 인덱스 제거
         df = df.droplevel(level=0, axis=1)
-        df.columns = level_1+level_0
-        logger.info(df.columns)
+        df.columns, flag_idx = self._clean_colums(level_0_col, level_1_col)
+        logger.info(f"cleaned col: {df.columns.to_list()}")
         
         # 필요한 데이터 select
         columns_of_interest = ["유동자산", "비유동자산", "자산총계", "유동부채", "비유동부채", "부채총계", "자본총계", "부채와자본총계"]
         filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
 
         # 공시일 별로 금액을 melt
-        days_columns = filterd_bs.columns[7:]
-        logger.info(days_columns)
-        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        days_columns = filterd_bs.columns[flag_idx:]
+        logger.info(f"melt col: {days_columns.to_list()}")
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:flag_idx], value_vars=days_columns, var_name="fs_date", value_name="amount")
         return melted_df
     
     def _prepare_is_fs(self, df: DataFrame):
@@ -69,22 +82,22 @@ class DartCollector():
         손익계산서를 정리하는 함수
         """
         logger.info("손익계산서")
-        level_0 = df.columns.get_level_values(0).to_list()[5:]
-        level_1 = df.columns.get_level_values(1).to_list()[:5]
-
+        level_0_col = df.columns.get_level_values(0).to_list()
+        level_1_col = df.columns.get_level_values(1).to_list()
+                
         # 상위 인덱스 제거
         df = df.droplevel(level=0, axis=1)
-        df.columns = level_1+level_0
-        logger.info(df.columns)
+        df.columns, flag_idx = self._clean_colums(level_0_col, level_1_col)
+        logger.info(f"cleaned col: {df.columns.to_list()}")
         
         # 필요한 데이터 select
         columns_of_interest = ["수익(매출액)","매출원가","매출총이익","판매비와관리비","영업이익","당기순이익(손실)","기본주당이익(손실)"]
         filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
 
         # 공시일 별로 금액을 melt
-        days_columns = filterd_bs.columns[5:]
-        logger.info(days_columns)
-        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:5], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        days_columns = filterd_bs.columns[flag_idx:]
+        logger.info(f"melt col: {days_columns.to_list()}")
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:flag_idx], value_vars=days_columns, var_name="fs_date", value_name="amount")
         
         return melted_df
     
@@ -93,22 +106,22 @@ class DartCollector():
         포괄손익계산서를 정리하는 함수
         """
         logger.info("포괄손익계산서")
-        level_0 = df.columns.get_level_values(0).to_list()[7:]
-        level_1 = df.columns.get_level_values(1).to_list()[:7]
-
+        level_0_col = df.columns.get_level_values(0).to_list()
+        level_1_col = df.columns.get_level_values(1).to_list()
+                
         # 상위 인덱스 제거
         df = df.droplevel(level=0, axis=1)
-        df.columns = level_1+level_0
-        logger.info(df.columns)
+        df.columns, flag_idx = self._clean_colums(level_0_col, level_1_col)
+        logger.info(f"cleaned col: {df.columns.to_list()}")
         
         # 필요한 데이터 select
         columns_of_interest = ["당기순이익(손실)", "총포괄손익"]
         filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
 
         # 공시일 별로 금액을 melt
-        days_columns = filterd_bs.columns[7:]
-        logger.info(days_columns)
-        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        days_columns = filterd_bs.columns[flag_idx:]
+        logger.info(f"melt col: {days_columns.to_list()}")
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:flag_idx], value_vars=days_columns, var_name="fs_date", value_name="amount")
         return melted_df
     
     def _prepare_cf_fs(self, df: DataFrame):
@@ -116,22 +129,22 @@ class DartCollector():
         현금흐름표를 정리하는 함수
         """
         logger.info("현금흐름")
-        level_0 = df.columns.get_level_values(0).to_list()[7:]
-        level_1 = df.columns.get_level_values(1).to_list()[:7]
-
+        level_0_col = df.columns.get_level_values(0).to_list()
+        level_1_col = df.columns.get_level_values(1).to_list()
+                
         # 상위 인덱스 제거
         df = df.droplevel(level=0, axis=1)
-        df.columns = level_1+level_0
-        logger.info(df.columns)
+        df.columns, flag_idx = self._clean_colums(level_0_col, level_1_col)
+        logger.info(f"cleaned col: {df.columns.to_list()}")
         
         # 필요한 데이터 select
         columns_of_interest = ["영업활동 현금흐름", "투자활동 현금흐름", "재무활동 현금흐름", "기초의 현금및현금성자산", "기말의 현금및현금성자산"]
         filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
 
         # 공시일 별로 금액을 melt
-        days_columns = filterd_bs.columns[7:]
-        logger.info(days_columns)
-        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:7], value_vars=days_columns, var_name="fs_date", value_name="amount")
+        days_columns = filterd_bs.columns[flag_idx:]
+        logger.info(f"melt col: {days_columns.to_list()}")
+        melted_df = pd.melt(filterd_bs, id_vars=filterd_bs.columns[:flag_idx], value_vars=days_columns, var_name="fs_date", value_name="amount")
         return melted_df
 
     def validate_report_by_fix_date(self, report, from_date):
@@ -148,7 +161,7 @@ class DartCollector():
         # 정규 표현식에서 추출한 년도와 월을 연결
         extracted_date = int(match.group(1) + match.group(2))
         if flag_date <= extracted_date:
-            logger.info(f"{flag_date} <= {extracted_date}")
+            logger.info(f"This report passed. {extracted_date}")
             return report
         logger.info(f'Report is before requested from_date[{from_date}]')
         return None
@@ -160,7 +173,7 @@ class DartCollector():
             fs_type = ('bs', 'is', 'cis', 'cf')
             fs_pack = {}
             for f in fs_type:
-                if not fs[f].empty:
+                if f in fs.keys() and isinstance(fs[f], DataFrame):
                     if f == 'bs':
                         prepared_df = self._prepare_bs_fs(fs[f])
                     if f == 'is':
@@ -185,6 +198,7 @@ class DartCollector():
             logger.info('Warning: NoDataReceived')
             return {}
         except Exception as ex:
+            logger.info(traceback.format_exc())
             logger.info(f'Warning[Exception]: {ex}')
             return {}
         return fs_pack
@@ -194,9 +208,9 @@ class DartCollector():
             from_date = from_date if from_date and isinstance(from_date, str) else self._today()
             to_date = to_date if to_date and isinstance(to_date, str) else self._today()
 
-            df_bs = DataFrame() # 연결재무상태표
-            df_is = DataFrame() # 연결손익계산서
-            df_cis = DataFrame() # 연결포괄손익계산서
+            df_bs = DataFrame() # 재무상태표
+            df_is = DataFrame() # 손익계산서
+            df_cis = DataFrame() # 포괄손익계산서
             df_cf = DataFrame() # 현금흐름표
             
             # NOTE 23~24년에 있었던 시가총액 하위 30% 기업 
@@ -215,8 +229,10 @@ class DartCollector():
                     # samsung = corp_list.find_by_corp_name(corp_code=corp_code)
                     # fs = samsung.extract_fs(bgn_de='20120101') 와 동일
                     try:
-                        for idx in ('A001', 'A002', 'A003'): # 년, 반기, 분기
-                            reports = self.dart.filings.search(corp_code=corp.corp_code, bgn_de=from_date, pblntf_detail_ty=idx, page_count=100, last_reprt_at="N")
+                        # for idx in ('A001', 'A002', 'A003','F001', 'F002'): # 년, 반기, 분기
+                        #     reports = self.dart.filings.search(corp_code=corp.corp_code, bgn_de=from_date, pblntf_detail_ty=idx, page_count=100, last_reprt_at="N")
+                        for idx in ('A', 'F'): # 년, 반기, 분기
+                            reports = self.dart.filings.search(corp_code=corp.corp_code, bgn_de=from_date, pblntf_ty=idx, page_count=100, last_reprt_at="N")
                             reports_count = len(reports)
                             for idx, _ in enumerate(range(reports_count)):
                                 report = reports.pop(0)

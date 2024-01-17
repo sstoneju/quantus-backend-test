@@ -1,6 +1,6 @@
 import traceback
 import argparse
-from loguru import logger
+from logger import logger
 from datetime import datetime as dt
 import pandas as pd
 
@@ -40,7 +40,7 @@ def main(func, year):
             logger.info(result)
         if func == "dart_fs_count":
             # NOTE python main.py --func dart_fs_count
-            sorted_list = pd.read_csv('현금흐름표_20220101_20240114.csv')['stock_code'].drop_duplicates().tolist()
+            sorted_list = pd.read_csv('현금흐름표_20220101_20240114.csv')['corp_name'].drop_duplicates().tolist()
             logger.info(f"{len(sorted_list)}:  {sorted_list}")
         if func == "dart_corp_info":
             # NOTE python main.py --func dart_corp_info
