@@ -1,4 +1,5 @@
 from calendar import month
+import json
 import os
 import re
 from time import sleep
@@ -161,7 +162,7 @@ class DartCollector():
         # 정규 표현식에서 추출한 년도와 월을 연결
         extracted_date = int(match.group(1) + match.group(2))
         if flag_date <= extracted_date:
-            logger.info(f"This report passed. {extracted_date}")
+            logger.info(f"This report is okay. {extracted_date}")
             return report
         logger.info(f'Report is before requested from_date[{from_date}]')
         return None
@@ -169,28 +170,29 @@ class DartCollector():
     def _get_fs(self, report: Report, from_date:str):
         try:
             report = self.validate_report_by_fix_date(report, from_date)
-            fs = analyze_report(report)
-            fs_type = ('bs', 'is', 'cis', 'cf')
-            fs_pack = {}
-            for f in fs_type:
-                if f in fs.keys() and isinstance(fs[f], DataFrame):
-                    if f == 'bs':
-                        prepared_df = self._prepare_bs_fs(fs[f])
-                    if f == 'is':
-                        prepared_df = self._prepare_is_fs(fs[f])
-                    if f == 'cis':
-                        prepared_df = self._prepare_cis_fs(fs[f])
-                    if f == 'cf':
-                        prepared_df = self._prepare_cf_fs(fs[f])
+            if report:
+                fs = analyze_report(report)
+                fs_type = ('bs', 'is', 'cis', 'cf')
+                fs_pack = {}
+                for f in fs_type:
+                    if f in fs.keys() and isinstance(fs[f], DataFrame):
+                        if f == 'bs':
+                            prepared_df = self._prepare_bs_fs(fs[f])
+                        if f == 'is':
+                            prepared_df = self._prepare_is_fs(fs[f])
+                        if f == 'cis':
+                            prepared_df = self._prepare_cis_fs(fs[f])
+                        if f == 'cf':
+                            prepared_df = self._prepare_cf_fs(fs[f])
 
-                    prepared_df['rcp_no'] = report.rcp_no
-                    prepared_df['report_nm'] = report.report_nm
-                    prepared_df['rcept_dt'] = report.rcept_dt
-                    prepared_df['available_at'] = report.rcept_dt
-                    prepared_df['stock_code'] = report.stock_code
-                    prepared_df['corp_code'] = report.corp_code
-                    prepared_df['corp_name'] = report.corp_name
-                    fs_pack[f] = prepared_df
+                        prepared_df['rcp_no'] = report.rcp_no
+                        prepared_df['report_nm'] = report.report_nm
+                        prepared_df['rcept_dt'] = report.rcept_dt
+                        prepared_df['available_at'] = report.rcept_dt
+                        prepared_df['stock_code'] = report.stock_code
+                        prepared_df['corp_code'] = report.corp_code
+                        prepared_df['corp_name'] = report.corp_name
+                        fs_pack[f] = prepared_df
         except NotFoundConsolidated as e:
             logger.info('Warning: NotFoundConsolidated')
             return {}
@@ -236,7 +238,7 @@ class DartCollector():
                             reports_count = len(reports)
                             for idx, _ in enumerate(range(reports_count)):
                                 report = reports.pop(0)
-                                logger.info(f"{idx+1}/{reports_count}\n{report}")
+                                logger.info(f"{idx+1}/{reports_count}\n{json.dumps(report)}")
                                 extract_fs = self._get_fs(report, from_date)
                                 if 'bs' in extract_fs.keys():
                                     df_bs = pd.concat([df_bs, extract_fs['bs']], ignore_index=True)
@@ -246,6 +248,7 @@ class DartCollector():
                                     df_cis = pd.concat([df_cis, extract_fs['cis']], ignore_index=True)
                                 if 'cf' in extract_fs.keys():
                                     df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
+                                logger.info(f'Done {report.corp_name} ...')
                             sleep(1)
                     except NotFoundConsolidated as e:
                         logger.info('Warning: NotFoundConsolidated')
