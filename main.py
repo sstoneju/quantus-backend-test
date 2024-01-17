@@ -38,10 +38,10 @@ def main(func, year):
             dart_api = DartCollector()
             result = dart_api.dart_fs_by_corp(from_date='20220101', to_date='20240114')
             logger.info(result)
-        if func == "dart_fs_count":
-            # NOTE python main.py --func dart_fs_count
-            sorted_list = pd.read_csv('현금흐름표_20220101_20240114.csv')['corp_name'].drop_duplicates().tolist()
-            logger.info(f"{len(sorted_list)}:  {sorted_list}")
+        if func == "dart_fs__company_count":
+            # NOTE python main.py --func dart_fs__company_count
+            sorted_list = pd.read_csv('연결손익계산서_upper_20.csv')['corp_name'].drop_duplicates().tolist()
+            logger.info(f"{len(sorted_list)}개:  {sorted_list}")
         if func == "dart_corp_info":
             # NOTE python main.py --func dart_corp_info
             dart_api = DartCollector()
@@ -55,6 +55,12 @@ def main(func, year):
             market_cap = 'market_cap_by_ticker_kospi.csv'
             transform = Transform(stock_ohlcv, market_cap)
             transform.ffill_fs_bs('연결재무상태표', '20230101', '20240101')
+        if func == "trans_fs_is":
+            # NOTE python main.py --func trans_fs_is
+            stock_ohlcv = 'market_ohlcv_kospi.csv'
+            market_cap = 'market_cap_by_ticker_kospi.csv'
+            transform = Transform(stock_ohlcv, market_cap)
+            transform.ffill_fs_is('연결손익계산서_upper_20', '20230101', '20240101')
 
         # NOTE 데이터 백테스트
 
