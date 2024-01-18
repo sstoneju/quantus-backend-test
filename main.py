@@ -14,8 +14,8 @@ def main(func, year):
         if func == "krx_market_cap_by_ticker":
             # NOTE python main.py --func krx_market_cap_by_ticker
             krx_api = KrxCollector()
-            result = krx_api.get_market_cap_by_ticker(from_date='20230101', to_date='20240114', market="KOSPI")
-            result.to_csv("market_cap_by_ticker_kospi.csv")
+            result = krx_api.get_market_cap_by_ticker(from_date='20220101', to_date='20221231', market="KOSPI")
+            result.to_csv("market_cap_by_ticker_kospi_2022.csv")
         if func == "sorted_result_under_50":
             # NOTE python main.py --func sorted_result_under_50
             krx_api = KrxCollector()
@@ -38,10 +38,11 @@ def main(func, year):
             dart_api = DartCollector()
             result = dart_api.dart_fs_by_corp(from_date='20220101', to_date='20240114')
             logger.info(result)
-        if func == "dart_fs__company_count":
-            # NOTE python main.py --func dart_fs__company_count
-            sorted_list = pd.read_csv('연결손익계산서_upper_20.csv')['corp_name'].drop_duplicates().tolist()
-            logger.info(f"{len(sorted_list)}개:  {sorted_list}")
+        if func == "dart_fs_count":
+            # NOTE python main.py --func dart_fs_count
+            sorted_list = pd.read_csv('연결포괄손익계산서_20220101_20240114.csv')['corp_name'].drop_duplicates().to_list()
+            sorted_list2 = pd.read_csv('연결손익계산서_20240117.csv')['corp_name'].drop_duplicates().tolist()
+            logger.info(f"{len(sorted_list)}:  {sorted_list}")
         if func == "dart_corp_info":
             # NOTE python main.py --func dart_corp_info
             dart_api = DartCollector()
@@ -60,8 +61,20 @@ def main(func, year):
             stock_ohlcv = 'market_ohlcv_kospi.csv'
             market_cap = 'market_cap_by_ticker_kospi.csv'
             transform = Transform(stock_ohlcv, market_cap)
-            transform.ffill_fs_is('연결손익계산서_upper_20', '20230101', '20240101')
-
+            transform.ffill_fs_is('연결손익계산서_20240117', '20230101', '20240101')
+        if func == "trans_fs_cis":
+            # NOTE python main.py --func trans_fs_cis
+            stock_ohlcv = 'market_ohlcv_kospi.csv'
+            market_cap = 'market_cap_by_ticker_kospi.csv'
+            transform = Transform(stock_ohlcv, market_cap)
+            transform.ffill_fs_cis('연결포괄손익계산서_20240117', '20230101', '20240101')
+        if func == "bind_for_strategy":
+            # NOTE python main.py --func bind_for_strategy
+            stock_ohlcv = 'market_ohlcv_kospi.csv'
+            market_cap = 'market_cap_by_ticker_kospi_2023.csv'
+            transform = Transform(stock_ohlcv=stock_ohlcv, market_cap=market_cap)
+            transform.bind_for_strategy()
+        
         # NOTE 데이터 백테스트
 
     except Exception as e:

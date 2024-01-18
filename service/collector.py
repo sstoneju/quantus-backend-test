@@ -109,14 +109,13 @@ class DartCollector():
         logger.info("포괄손익계산서")
         level_0_col = df.columns.get_level_values(0).to_list()
         level_1_col = df.columns.get_level_values(1).to_list()
-                
         # 상위 인덱스 제거
         df = df.droplevel(level=0, axis=1)
         df.columns, flag_idx = self._clean_colums(level_0_col, level_1_col)
         logger.info(f"cleaned col: {df.columns.to_list()}")
         
         # 필요한 데이터 select
-        columns_of_interest = ["당기순이익(손실)", "총포괄손익"]
+        columns_of_interest = ["수익(매출액)","매출원가","매출총이익","판매비와관리비","영업이익","당기순이익(손실)","기본주당이익(손실)", "당기순이익(손실)", "총포괄손익"]
         filterd_bs = df[df['label_ko'].isin(columns_of_interest)]
 
         # 공시일 별로 금액을 melt
@@ -172,10 +171,13 @@ class DartCollector():
             report = self.validate_report_by_fix_date(report, from_date)
             if report:
                 fs = analyze_report(report)
-                fs_type = ('bs', 'is', 'cis', 'cf')
+                # fs_type = ('bs', 'is', 'cis', 'cf')
+                fs_type = ['cis']
                 fs_pack = {}
                 for f in fs_type:
-                    if f in fs.keys() and isinstance(fs[f], DataFrame):
+                    logger.info(f)
+                    # if f in fs.keys() and isinstance(fs[f], DataFrame):
+                    if isinstance(fs[f], DataFrame):
                         if f == 'bs':
                             prepared_df = self._prepare_bs_fs(fs[f])
                         if f == 'is':
@@ -238,7 +240,7 @@ class DartCollector():
                             reports_count = len(reports)
                             for idx, _ in enumerate(range(reports_count)):
                                 report = reports.pop(0)
-                                logger.info(f"{idx+1}/{reports_count}\n{json.dumps(report)}")
+                                logger.info(f"{idx+1}/{reports_count}\n{report}")
                                 extract_fs = self._get_fs(report, from_date)
                                 if 'bs' in extract_fs.keys():
                                     df_bs = pd.concat([df_bs, extract_fs['bs']], ignore_index=True)
@@ -255,12 +257,13 @@ class DartCollector():
                     except NoDataReceived as e:
                         logger.info('Warning: NoDataReceived')
                     except Exception as ex:
+                        logger.info(traceback.format_exc())
                         logger.info(f'Warning[Exception]: {ex}')
 
-            df_bs.to_csv(f'연결재무상태표_{from_date}_{to_date}.csv')
-            df_is.to_csv(f'연결손익계산서_{from_date}_{to_date}.csv')
+            # df_bs.to_csv(f'연결재무상태표_{from_date}_{to_date}.csv')
+            # df_is.to_csv(f'연결손익계산서_{from_date}_{to_date}.csv')
             df_cis.to_csv(f'연결포괄손익계산서_{from_date}_{to_date}.csv')
-            df_cf.to_csv(f'현금흐름표_{from_date}_{to_date}.csv')
+            # df_cf.to_csv(f'현금흐름표_{from_date}_{to_date}.csv')
         except OverQueryLimit as e:
             logger.info(f'Warning[OverQueryLimit]: {e}')
             self.set_next_api_key()
