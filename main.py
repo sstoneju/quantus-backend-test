@@ -48,31 +48,28 @@ def main(func, year):
             dart_api = DartCollector()
             result = dart_api.dart_fs_by_day(from_date='20230101', to_date='20240114')
             logger.info(result)
+        if func == "dart_fs_basic":
+            # NOTE python main.py --func dart_fs_basic
+            dart_api = DartCollector()
+            result = dart_api.dart_fs_basic()
+            logger.info(result)
 
         # NOTE 데이터 transform
         if func == "trans_fs_bs":
             # NOTE python main.py --func trans_fs_bs
-            stock_ohlcv = 'market_ohlcv_kospi.csv'
-            market_cap = 'market_cap_by_ticker_kospi.csv'
-            transform = Transform(stock_ohlcv, market_cap)
+            transform = Transform()
             transform.ffill_fs_bs('연결재무상태표', '20230101', '20240101')
         if func == "trans_fs_is":
             # NOTE python main.py --func trans_fs_is
-            stock_ohlcv = 'market_ohlcv_kospi.csv'
-            market_cap = 'market_cap_by_ticker_kospi.csv'
-            transform = Transform(stock_ohlcv, market_cap)
+            transform = Transform()
             transform.ffill_fs_is('연결손익계산서_20240117', '20230101', '20240101')
         if func == "trans_fs_cis":
             # NOTE python main.py --func trans_fs_cis
-            stock_ohlcv = 'market_ohlcv_kospi.csv'
-            market_cap = 'market_cap_by_ticker_kospi.csv'
-            transform = Transform(stock_ohlcv, market_cap)
-            transform.ffill_fs_cis('연결포괄손익계산서_20240117', '20230101', '20240101')
+            transform = Transform()
+            transform.ffill_fs_cis('연결포괄손익계산서_20220101_20240114', '20230101', '20240101')
         if func == "bind_for_strategy":
             # NOTE python main.py --func bind_for_strategy
-            stock_ohlcv = 'market_ohlcv_kospi.csv'
-            market_cap = 'market_cap_by_ticker_kospi_2023.csv'
-            transform = Transform(stock_ohlcv=stock_ohlcv, market_cap=market_cap)
+            transform = Transform()
             transform.bind_for_strategy()
         
         # NOTE 데이터 백테스트

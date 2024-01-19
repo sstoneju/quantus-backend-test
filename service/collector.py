@@ -217,7 +217,7 @@ class DartCollector():
             df_cis = DataFrame() # 포괄손익계산서
             df_cf = DataFrame() # 현금흐름표
             
-            # NOTE 23~24년에 있었던 시가총액 하위 30% 기업 
+            # NOTE 22~24년에 있었던 시가총액 하위 20% 기업 
             sorted_list = pd.read_csv('market_cap_by_ticker_kospi.csv').sort_values(by='시가총액', ascending=False)
             ticker_list = sorted_list.head(int(len(sorted_list)*0.2))['티커'].drop_duplicates().tolist()
             logger.info(f"{len(ticker_list)}:  {ticker_list}")
@@ -230,11 +230,7 @@ class DartCollector():
                 corp = corp_list.find_by_stock_code(ticker)
                 logger.info(f'[{idx}/{len(ticker_list)}] ticker:{ticker}  corp: {corp}, from_date:{from_date}, to_date:{to_date}')
                 if corp:
-                    # samsung = corp_list.find_by_corp_name(corp_code=corp_code)
-                    # fs = samsung.extract_fs(bgn_de='20120101') 와 동일
                     try:
-                        # for idx in ('A001', 'A002', 'A003','F001', 'F002'): # 년, 반기, 분기
-                        #     reports = self.dart.filings.search(corp_code=corp.corp_code, bgn_de=from_date, pblntf_detail_ty=idx, page_count=100, last_reprt_at="N")
                         for idx in ('A', 'F'): # 년, 반기, 분기
                             reports = self.dart.filings.search(corp_code=corp.corp_code, bgn_de=from_date, pblntf_ty=idx, page_count=100, last_reprt_at="N")
                             reports_count = len(reports)
@@ -319,6 +315,69 @@ class DartCollector():
             self.set_next_api_key()
             return self.dart_fs_by_day(bgn_date, end_date)
         return 
+
+    def dart_fs_basic(self):
+        try:
+            df_bs = DataFrame() # 연결재무상태표
+            df_is = DataFrame() # 연결손익계산서
+            df_cis = DataFrame() # 연결포괄손익계산서
+            df_cf = DataFrame() # 현금흐름표
+
+            df_bs = DataFrame() # 연결재무상태표
+            df_is = DataFrame() # 연결손익계산서
+            df_cis = DataFrame() # 연결포괄손익계산서
+            df_cf = DataFrame() # 현금흐름표
+
+            corp_code = '00877059'
+
+# ÷            fs = self.dart.fs.extract(corp_code=corp_code, bgn_de='20210101')
+            corp_list = self.dart.get_corp_list()
+
+            for com in corp_list:
+                company = corp_list.find_by_corp_code(com.corp_code)
+                fs = company.extract_fs(bgn_de='20210101')
+                df_bs = fs['bs']
+                df_is = fs['is']
+                df_cis = fs['cis']
+                df_cf = fs['cf']
+
+                if df_bs is None:
+                    pass
+                elif df_bs.empty:
+                    pass
+                else:
+                    df_bs = pd.concat([df_bs, fs['bs']], ignore_index=True)
+
+                if df_is is None:
+                    pass
+                elif df_is.empty:
+                    pass
+                else:
+                    df_is = pd.concat([df_is, fs['is']], ignore_index=True)
+                
+                
+                if df_cis is None:
+                    pass
+                elif df_cis.empty:
+                    pass
+                else:
+                    df_cis = pd.concat([df_cis, fs['cis']], ignore_index=True)
+                
+                if df_cf is None:
+                    pass
+                elif df_cf.empty:
+                    pass
+                else:
+                    df_cf = pd.concat([df_cf, fs['cf']], ignore_index=True)
+
+            df_is.to_csv(f'연결손익계산서_{corp_code}.csv')
+            df_bs.to_csv(f'연결재무상태표_{corp_code}.csv')
+            df_cis.to_csv(f'연결포괄손익계산서_{corp_code}.csv')
+            df_cf.to_csv(f'현금흐름표_{corp_code}.csv')
+        except OverQueryLimit as e:
+            logger.info(f'Warning[OverQueryLimit]: {e}')
+            self.set_next_api_key()
+        return
 
 
 class KrxCollector():
