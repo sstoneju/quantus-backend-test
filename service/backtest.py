@@ -27,6 +27,7 @@ class Backtest(object):
 
         history_bucket = pd.DataFrame()
         bought_bucket = pd.DataFrame()
+        daily_total_amount = []
 
         for idx, date in enumerate(market_date):
             # 리벨런싱인 날의 동작
@@ -44,6 +45,7 @@ class Backtest(object):
                 
                 bought_bucket = extract_stock[['티커', 'buy_date', '종가', 'buy_count', 'buy_amount']]
                 history_bucket = pd.concat([history_bucket, bought_bucket], ignore_index=True)
+                daily_total_amount.append({'date':str(date), 'amount':extract_stock['buy_amount'].sum()})
                 # next_day로 넘어간다.
                 continue
             
@@ -54,12 +56,15 @@ class Backtest(object):
                     stock['티커'].append(row.티커)
                     stock['buy_date'].append(date)
                     stock['buy_count'].append(row.buy_count)
-                    stock['종가'].append(self.period_data[(self.period_data['trade_date'] == int(date)) & (self.period_data['티커'] == row.티커)]['종가'].item())
-                    stock['buy_amount'].append(row.buy_amount)
+                    close_price = self.period_data[(self.period_data['trade_date'] == int(date)) & (self.period_data['티커'] == row.티커)]['종가']
+                    stock['종가'].append(close_price.item())
+                    stock['buy_amount'].append(row.buy_count * close_price.item())
                 bought_bucket = pd.DataFrame(stock)
+                daily_total_amount.append({'date':str(date), 'amount':sum(stock['buy_amount'])})
                 history_bucket = pd.concat([history_bucket, bought_bucket], ignore_index=True)
         
         history_bucket.to_csv('backtest_history_bucket.csv')
+        logger.info(daily_total_amount)
         logger.info(f"final amount: {set_amount}")
         
         return

@@ -84,13 +84,13 @@ def main(func, year):
 
         # NOTE 백테스트 로직 추가
         if func == "backtest":
-            from pandas.tseries.offsets import MonthEnd
+            from pandas.tseries.offsets import MonthEnd, BusinessMonthEnd
             # NOTE python main.py --func backtest
             quant_strategy = QuantStragegy()
             period_data = pd.read_csv('market_cap_by_ticker_kospi_2023.csv', index_col=[0])
             start_date = "20230101"
             end_date = "20231231"
-            end_of_month_dates = [date.strftime("%Y%m%d") for date in pd.date_range(start_date, end_date, freq=MonthEnd())]
+            end_of_month_dates = [date.strftime("%Y%m%d") for date in pd.date_range(start_date, end_date, freq=BusinessMonthEnd())]
             end_of_month_dates.append('20230102')
 
             backtest = Backtest(stragery=quant_strategy, period_data=period_data)
