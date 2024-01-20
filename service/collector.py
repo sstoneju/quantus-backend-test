@@ -22,9 +22,11 @@ from dart_fss.errors.errors import NotFoundConsolidated, NoDataReceived, OverQue
 class DartCollector():
     # NOTE 환경 변수로 빼놓기
     api_key = [
-        "d5ea58abd9def006340a95d00655011fb1a8255b",
+        "d877569e4568f7624a2026a155b7bf630490a233",
+        "3355e181b6492517bf43b4d3a2ce3c14ebd7c4bd",
         "f25039bc5c5af07e0c9a788366ecfd58ca72674f",
-        "3355e181b6492517bf43b4d3a2ce3c14ebd7c4bd"
+        "6eb56e0ac5707a199e27af6839ec5bfb6e1170d6",
+        "d5ea58abd9def006340a95d00655011fb1a8255b",
     ]
     key_sequence = 0
     dart: Dart
@@ -168,12 +170,11 @@ class DartCollector():
 
     def _get_fs(self, report: Report, from_date:str):
         try:
+            fs_pack = {}
             report = self.validate_report_by_fix_date(report, from_date)
             if report:
                 fs = analyze_report(report)
-                # fs_type = ('bs', 'is', 'cis', 'cf')
-                fs_type = ['cis']
-                fs_pack = {}
+                fs_type = ('bs', 'is', 'cis', 'cf')
                 for f in fs_type:
                     logger.info(f)
                     # if f in fs.keys() and isinstance(fs[f], DataFrame):
@@ -201,6 +202,10 @@ class DartCollector():
         except NoDataReceived as e:
             logger.info('Warning: NoDataReceived')
             return {}
+        except OverQueryLimit as e:
+            logger.info(f'Warning[OverQueryLimit]: {e}')
+            self.set_next_api_key()
+            return self._get_fs(report, from_date)
         except Exception as ex:
             logger.info(traceback.format_exc())
             logger.info(f'Warning[Exception]: {ex}')
@@ -217,10 +222,10 @@ class DartCollector():
             df_cis = DataFrame() # 포괄손익계산서
             df_cf = DataFrame() # 현금흐름표
             
-            # NOTE 22~24년에 있었던 시가총액 하위 20% 기업 
-            sorted_list = pd.read_csv('market_cap_by_ticker_kospi.csv').sort_values(by='시가총액', ascending=False)
-            ticker_list = sorted_list.head(int(len(sorted_list)*0.2))['티커'].drop_duplicates().tolist()
-            logger.info(f"{len(ticker_list)}:  {ticker_list}")
+            # NOTE 22년에 있었던 시가총액 하위 20% 기업 
+            sorted_list = pd.read_csv('market_cap_by_ticker_kospi_2022.csv').sort_values(by='시가총액', ascending=False)
+            ticker_list = sorted_list['티커'].drop_duplicates().tolist()
+            logger.info(f"{len(ticker_list)} count:  {ticker_list}")
             # ticker_list = under_20['티커']
             
             # 모든 상장된 기업 리스트 불러오기
@@ -247,7 +252,11 @@ class DartCollector():
                                 if 'cf' in extract_fs.keys():
                                     df_cf = pd.concat([df_cf, extract_fs['cf']], ignore_index=True)
                                 logger.info(f'Done {report.corp_name} ...')
-                            sleep(1)
+                                sleep(2)
+                            df_bs.to_csv(f'fs_data/연결재무상태표_{corp.corp_code}.csv')
+                            df_is.to_csv(f'fs_data/연결손익계산서_{corp.corp_code}.csv')
+                            df_cis.to_csv(f'fs_data/연결포괄손익계산서_{corp.corp_code}.csv')
+                            df_cf.to_csv(f'fs_data/현금흐름표_{corp.corp_code}.csv')
                     except NotFoundConsolidated as e:
                         logger.info('Warning: NotFoundConsolidated')
                     except NoDataReceived as e:
@@ -256,14 +265,9 @@ class DartCollector():
                         logger.info(traceback.format_exc())
                         logger.info(f'Warning[Exception]: {ex}')
 
-            # df_bs.to_csv(f'연결재무상태표_{from_date}_{to_date}.csv')
-            # df_is.to_csv(f'연결손익계산서_{from_date}_{to_date}.csv')
-            df_cis.to_csv(f'연결포괄손익계산서_{from_date}_{to_date}.csv')
-            # df_cf.to_csv(f'현금흐름표_{from_date}_{to_date}.csv')
-        except OverQueryLimit as e:
-            logger.info(f'Warning[OverQueryLimit]: {e}')
-            self.set_next_api_key()
-            return self.dart_fs_by_corp(from_date, to_date)
+        except Exception as ex:
+            logger.info(traceback.format_exc())
+            logger.info(f'Warning[Exception]: {ex}')
         return
 
 
@@ -323,60 +327,64 @@ class DartCollector():
             df_cis = DataFrame() # 연결포괄손익계산서
             df_cf = DataFrame() # 현금흐름표
 
-            df_bs = DataFrame() # 연결재무상태표
-            df_is = DataFrame() # 연결손익계산서
-            df_cis = DataFrame() # 연결포괄손익계산서
-            df_cf = DataFrame() # 현금흐름표
-
             corp_code = '00877059'
 
-# ÷            fs = self.dart.fs.extract(corp_code=corp_code, bgn_de='20210101')
             corp_list = self.dart.get_corp_list()
 
             for com in corp_list:
-                company = corp_list.find_by_corp_code(com.corp_code)
-                fs = company.extract_fs(bgn_de='20210101')
-                df_bs = fs['bs']
-                df_is = fs['is']
-                df_cis = fs['cis']
-                df_cf = fs['cf']
+                try:
+                    company = corp_list.find_by_corp_code(com.corp_code)
+                    fs = company.extract_fs(bgn_de='20220101')
+                    df_bs = fs['bs']
+                    df_is = fs['is']
+                    df_cis = fs['cis']
+                    df_cf = fs['cf']
 
-                if df_bs is None:
-                    pass
-                elif df_bs.empty:
-                    pass
-                else:
-                    df_bs = pd.concat([df_bs, fs['bs']], ignore_index=True)
+                    if df_bs is None:
+                        pass
+                    elif df_bs.empty:
+                        pass
+                    else:
+                        df_bs = pd.concat([df_bs, fs['bs']], ignore_index=True)
 
-                if df_is is None:
-                    pass
-                elif df_is.empty:
-                    pass
-                else:
-                    df_is = pd.concat([df_is, fs['is']], ignore_index=True)
-                
-                
-                if df_cis is None:
-                    pass
-                elif df_cis.empty:
-                    pass
-                else:
-                    df_cis = pd.concat([df_cis, fs['cis']], ignore_index=True)
-                
-                if df_cf is None:
-                    pass
-                elif df_cf.empty:
-                    pass
-                else:
-                    df_cf = pd.concat([df_cf, fs['cf']], ignore_index=True)
-
+                    if df_is is None:
+                        pass
+                    elif df_is.empty:
+                        pass
+                    else:
+                        df_is = pd.concat([df_is, fs['is']], ignore_index=True)
+                    
+                    
+                    if df_cis is None:
+                        pass
+                    elif df_cis.empty:
+                        pass
+                    else:
+                        df_cis = pd.concat([df_cis, fs['cis']], ignore_index=True)
+                    
+                    if df_cf is None:
+                        pass
+                    elif df_cf.empty:
+                        pass
+                    else:
+                        df_cf = pd.concat([df_cf, fs['cf']], ignore_index=True)
+                except NotFoundConsolidated as e:
+                    logger.info('Warning: NotFoundConsolidated')
+                except NoDataReceived as e:
+                    logger.info('Warning: NoDataReceived')
+                except OverQueryLimit as e:
+                    logger.info(f'Warning[OverQueryLimit]: {e}')
+                    self.set_next_api_key()
+                except Exception as ex:
+                    logger.info(traceback.format_exc())
+                    logger.info(f'Warning[Exception]: {ex}')
             df_is.to_csv(f'연결손익계산서_{corp_code}.csv')
             df_bs.to_csv(f'연결재무상태표_{corp_code}.csv')
             df_cis.to_csv(f'연결포괄손익계산서_{corp_code}.csv')
             df_cf.to_csv(f'현금흐름표_{corp_code}.csv')
-        except OverQueryLimit as e:
-            logger.info(f'Warning[OverQueryLimit]: {e}')
-            self.set_next_api_key()
+        except Exception as ex:
+            logger.info(traceback.format_exc())
+            logger.info(f'Warning[Exception]: {ex}')
         return
 
 

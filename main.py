@@ -3,9 +3,11 @@ import argparse
 from logger import logger
 from datetime import datetime as dt
 import pandas as pd
+from service.backtest import Backtest
 
 from service.collector import DartCollector, KrxCollector
 from service.transform import Transform
+from service.strategy import QuantStragegy
 from storage.csv import CsvStorage
 
 
@@ -26,8 +28,8 @@ def main(func, year):
         if func == "krx_market_ohlcv_by_ticker":
             # NOTE python main.py --func krx_market_ohlcv_by_ticker
             krx_api = KrxCollector()
-            result = krx_api.get_market_ohlcv_by_ticker(from_date='20230101', to_date='20240114', market="KOSPI")
-            result.to_csv("market_ohlcv_kospi.csv")
+            result = krx_api.get_market_ohlcv_by_ticker(from_date='20220101', to_date='20221231', market="KOSPI")
+            result.to_csv("market_ohlcv_kospi_2022.csv")
         if func == "fix_market_cap_by_ticker":
             # NOTE python main.py --func fix_market_cap_by_ticker
             pd_data = pd.read_csv('market_cap_by_ticker.csv', index_col=0 )
@@ -36,7 +38,7 @@ def main(func, year):
         if func == "dart_fs_by_corp":
             # NOTE python main.py --func dart_fs_by_corp
             dart_api = DartCollector()
-            result = dart_api.dart_fs_by_corp(from_date='20220101', to_date='20240114')
+            result = dart_api.dart_fs_by_corp(from_date='20220101', to_date='20240101')
             logger.info(result)
         if func == "dart_fs_count":
             # NOTE python main.py --func dart_fs_count
@@ -72,13 +74,35 @@ def main(func, year):
             transform = Transform()
             transform.bind_for_strategy()
         
-        # NOTE 데이터 백테스트
+        # NOTE 팩터 매기기
+        if func == "extract_stock":
+            # NOTE python main.py --func extract_stock
+            quant_strategy = QuantStragegy()
+            result = quant_strategy.extract_stock()
+            logger.info(f"\n{result}")
+            result.to_csv('extract_stock_by_strategy.csv', index_label=[0])
+
+        # NOTE 백테스트 로직 추가
+        if func == "backtest":
+            from pandas.tseries.offsets import MonthEnd
+            # NOTE python main.py --func backtest
+            quant_strategy = QuantStragegy()
+            period_data = pd.read_csv('market_cap_by_ticker_kospi_2023.csv', index_col=[0])
+            start_date = "20230101"
+            end_date = "20231231"
+            end_of_month_dates = [date.strftime("%Y%m%d") for date in pd.date_range(start_date, end_date, freq=MonthEnd())]
+            end_of_month_dates.append('20230102')
+
+            backtest = Backtest(stragery=quant_strategy, period_data=period_data)
+            backtest.rebalance(start_date = dt.strptime(start_date, "%Y%m%d"), 
+                               end_date = dt.strptime(end_date, "%Y%m%d"),
+                               rebalancing_date=end_of_month_dates)
+
+            
 
     except Exception as e:
         logger.info(e)
         logger.info(traceback.format_exc())
-
-
 
 
 if __name__ == "__main__":
