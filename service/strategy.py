@@ -9,8 +9,9 @@ class QuantStragegy(object):
     """
     데이터를 지정하고, 팩터들을 설정하고, sorting 후에 종목을 추출한다.
     """
-    factor_pack: list
-    kind_of_factor = ['per', 'pbr', 'roe', 'roa', 'debt_rate']
+    factor_pack = []
+    factor_columns = []
+    abled_factor = ['per', 'pbr', 'roe', 'roa', 'debt_rate']
 
     def __init__(self):
         # NOTE 수집 데이터가 완벽하지 않으니 mock으로 작업을 진행한다.
@@ -21,7 +22,7 @@ class QuantStragegy(object):
         """
         팩터를 지정해준다.
         """
-        if factor_name in self.kind_of_factor:
+        if factor_name not in self.abled_factor:
             logger.info(f"Can't set the factor: {factor_name}")
             return False
         logger.info(f"Set factor: {factor_name}")
@@ -29,7 +30,6 @@ class QuantStragegy(object):
         return True
     
     def _attach_mock_factor(self, stock_list: pd.DataFrame):
-        logger.info('Attaching temp data, use for factor data')
         # 데이터 프레임의 행과 열의 수를 설정
         num_rows = len(stock_list)
 
@@ -53,29 +53,35 @@ class QuantStragegy(object):
     
     def _get_per_score(self, stock_list: pd.DataFrame):
         # per 값이 낮으면 좋은 기업이기 때문에 rank를 높게 매긴다.
-        df_sorted = stock_list.sort_values(by='per', ascending=False) # 낮은 값에 높은 값을 주기 위해 정렬
+        df_sorted = stock_list.sort_values(by='per', ascending=False) # 낮은 값에 높은 값을 주기위해 정렬
         df_sorted['per_score'] = range(1, len(df_sorted) + 1)
         return df_sorted
     
     def _get_pbr_score(self, stock_list: pd.DataFrame):
-        df_sorted = stock_list.sort_values(by='pbr', ascending=False) # 낮은 값에 높은 값을 주기 위해 정렬
+        df_sorted = stock_list.sort_values(by='pbr', ascending=False) # 낮은 값에 높은 값을 주기위해 정렬
         df_sorted['pbr_score'] = range(1, len(df_sorted) + 1)
         return df_sorted
     
     def _get_roe_score(self,stock_list: pd.DataFrame):
-        df_sorted = stock_list.sort_values(by='roe', ascending=True) # 높은 값에 높은 값을 주기 위해 정렬
+        df_sorted = stock_list.sort_values(by='roe', ascending=True) # 높은 값에 높은 값을 주기위해 정렬
         df_sorted['roe_score'] = range(1, len(df_sorted) + 1)
         return df_sorted
     
     def _get_roa_score(self, stock_list: pd.DataFrame):
-        df_sorted = stock_list.sort_values(by='roa', ascending=True) # 낮은 값에 높은 값을 주기 위해 정렬
+        df_sorted = stock_list.sort_values(by='roa', ascending=True) # 낮은 값에 높은 값을 주기위해 정렬
         df_sorted['roa_score'] = range(1, len(df_sorted) + 1)
         return df_sorted
     
     def _get_debt_rate_score(self, stock_list: pd.DataFrame):
-        df_sorted = stock_list.sort_values(by='debt_rate', ascending=False) # 낮은 값에 높은 값을 주기 위해 정렬
+        df_sorted = stock_list.sort_values(by='debt_rate', ascending=False) # 낮은 값에 높은 값을 주기위해 정렬
         df_sorted['debt_rate_score'] = range(1, len(df_sorted) + 1)
         return df_sorted
+
+    def _set_score(self):
+        self.factor_columns = []
+        for factor in self.factor_pack:
+            self.factor_columns.append(f'{factor}_score')
+        return self.factor_columns
 
     def extract_stock(self, target_date_stock: pd.DataFrame=None, extract_count: int = 20, target_date: str='') -> pd.DataFrame:
         """
@@ -84,12 +90,11 @@ class QuantStragegy(object):
         eg) per_score, pbr_score
         """
         target_date_stock = self.mock_data[self.mock_data['trade_date'] == int(target_date)].reset_index(drop=True)        
-        # NOTE 팩터를 임의의 데이터로 채워준다. 현 상태로는 고정값의 factor로 테스트를 하지 못함. 추출해서 backtest 동작을 테스트를 할 순 있다.
+        # NOTE 팩터를 임의의 데이터로 채워준다. 현 상태로는 고정값의 factor로 테스트를 하지 못함. 동작의 로직을 테스트를 할 순 있다.
         target_date_stock = self._attach_mock_factor(target_date_stock)
     
         # NOTE 클래스의 외부에서 set_factor를 이용해 설정해준다.
-        self.factor_pack = ['per', 'pbr', 'roe', 'roa', 'debt_rate']
-        self.factor_scores = ['per_score', 'pbr_score', 'roe_score', 'roa_score', 'debt_rate_score']
+        self.factor_columns = self._set_score()
 
         cal_score_stock = target_date_stock
         for factor in self.factor_pack:
@@ -103,7 +108,8 @@ class QuantStragegy(object):
                 cal_score_stock = self._get_roa_score(cal_score_stock)
             if factor == 'debt_rate':
                 cal_score_stock = self._get_debt_rate_score(cal_score_stock)
+            # NOTE 사용할 수 있는 factor를 더 확장 할 수 있다.
         
-        cal_score_stock['total_score'] = cal_score_stock[self.factor_scores].sum(axis=1)
+        cal_score_stock['total_score'] = cal_score_stock[self.factor_columns].sum(axis=1)
 
         return cal_score_stock.sort_values(by='total_score', ascending=False).reset_index(drop=True).head(extract_count)

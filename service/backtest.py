@@ -1,4 +1,5 @@
 from datetime import datetime as dt, timedelta
+from matplotlib import pyplot as plt
 import pandas as pd
 from service.strategy import QuantStragegy
 from logger import logger
@@ -11,10 +12,27 @@ class Backtest(object):
         self.stragery = stragery
         self.period_data = period_data
 
+    def show_chart(self, data):
+        # 데이터프레임으로 변환
+        df_one_month = pd.DataFrame(data)
 
-    def rebalance(self, start_date: dt, end_date: dt, rebalancing_date: list[str], extract_count=20, set_amount = 20000000):
+        # 'date' 컬럼을 datetime 형식으로 변환
+        df_one_month['date'] = pd.to_datetime(df_one_month['date'], format='%Y%m%d')
+
+        # 그래프 그리기
+        plt.figure(figsize=(10, 6))
+        plt.plot(df_one_month['date'], df_one_month['amount'], marker='o', linestyle='-')
+        plt.title('Amount by Date (One Month)')
+        plt.xlabel('Date')
+        plt.ylabel('Amount')
+        plt.xticks(rotation=45)
+        plt.tight_layout()  # 레이아웃 조정
+        plt.grid(True)
+        plt.show()
+
+    def execute(self, start_date: dt, end_date: dt, rebalancing_date: list[str], extract_count=20, set_amount = 20000000):
         """
-        이 함수는 리밸런싱 날짜에 전략에 맞는 ticker를 받아서
+        필요한 날짜에 대한 정보를 받아서 초기 금액을 가지고 backtest를 진행한다.
         """
         # 테스트를 진행할 특정 기간을 추출한다.
         period_data = self.period_data[(self.period_data['trade_date'] >= int(start_date.strftime("%Y%m%d")))
@@ -32,6 +50,7 @@ class Backtest(object):
         for idx, date in enumerate(market_date):
             # 리벨런싱인 날의 동작
             if date in rebalancing_date:
+                logger.info(f'rebalancing for {date}')
                 extract_stock = self.stragery.extract_stock(target_date=str(date), extract_count=extract_count)
 
                 # 두번째 리밸런싱부터 전체 잔액을 구한다.
@@ -49,23 +68,24 @@ class Backtest(object):
                 # next_day로 넘어간다.
                 continue
             
-            # 리벨런싱일이 아닌 날
-            if not bought_bucket.empty:
-                stock = {'티커':[], 'buy_date':[],  'buy_count':[], '종가':[], 'buy_amount':[]}
-                for row in bought_bucket.itertuples():
-                    stock['티커'].append(row.티커)
-                    stock['buy_date'].append(date)
-                    stock['buy_count'].append(row.buy_count)
-                    close_price = self.period_data[(self.period_data['trade_date'] == int(date)) & (self.period_data['티커'] == row.티커)]['종가']
-                    stock['종가'].append(close_price.item())
-                    stock['buy_amount'].append(row.buy_count * close_price.item())
-                bought_bucket = pd.DataFrame(stock)
-                daily_total_amount.append({'date':str(date), 'amount':sum(stock['buy_amount'])})
-                history_bucket = pd.concat([history_bucket, bought_bucket], ignore_index=True)
+            stock = {'티커':[], 'buy_date':[],  'buy_count':[], '종가':[], 'buy_amount':[]}
+            for row in bought_bucket.itertuples():
+                stock['티커'].append(row.티커)
+                stock['buy_date'].append(date)
+                stock['buy_count'].append(row.buy_count)
+                close_price = self.period_data[(self.period_data['trade_date'] == int(date)) & (self.period_data['티커'] == row.티커)]['종가']
+                stock['종가'].append(int(close_price.iloc[0])) if len(close_price) >= 1 else logger.info(f'close_price is None: {close_price}[{type(close_price)}]')
+                stock['buy_amount'].append(row.buy_count * (int(close_price.iloc[0]) if len(close_price) >= 1 else 0))
+            bought_bucket = pd.DataFrame(stock)
+            daily_total_amount.append({'date':str(date), 'amount':sum(stock['buy_amount'])})
+            history_bucket = pd.concat([history_bucket, bought_bucket], ignore_index=True)
         
         history_bucket.to_csv('backtest_history_bucket.csv')
-        logger.info(daily_total_amount)
         logger.info(f"final amount: {set_amount}")
         
-        return
+        # NOTE daily_total_amount 그래프를 그리면 전략의 수익률 그래프
+        logger.info(f"daily_total_amount: {daily_total_amount}")
+        self.show_chart(daily_total_amount)
+        
+        return history_bucket
     

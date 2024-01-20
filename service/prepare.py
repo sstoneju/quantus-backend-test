@@ -132,7 +132,7 @@ class Transform(object):
         financial_bs_data = self.preprocess_financial_bs_data(financial_bs_data)
 
 
-        revenue_date = self.calculate_quarter_difference(financial_cis_data, target_year=2022, target_col='매출원가')
+        # revenue_date = self.calculate_quarter_difference(financial_cis_data, target_year=2022, target_col='매출원가')
 
         net_income_date = self.calculate_quarter_difference(financial_cis_data, target_year=2022, target_col='당기순이익(손실)') 
         net_income_date_2 = self.calculate_quarter_difference(financial_is_data, target_year=2022, target_col='당기순이익(손실)')
@@ -150,10 +150,10 @@ class Transform(object):
         net_income = self.merge_with_price_data(net_income_date, market_data, 'net_income')
         total_assets = self.merge_with_price_data(total_assets_data, net_income, 'total_assets')
         total_capital = self.merge_with_price_data(total_capital_data, total_assets, 'total_capital')
+        
         # NOTE 이슈: 당기순이익, 자산총계가 모두 나오는 데이터가 없음.
         # total_capital.to_csv("total_capital.csv")
         total_capital.to_csv("total_capital.csv")
-    
 
         # NOTE PER, PBR 계산
         # monthly_financial_data['PER'] = monthly_price_data['close_price'] / monthly_financial_data['earnings_per_share']
