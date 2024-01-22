@@ -56,7 +56,7 @@ $ pip install -r requirements.txt
 
 **KRX 데이터 수집**
 
-- collector.py에 [KrxCollector](service/collector.py#325) 클래스로 작성했습니다.
+- collector.py에 [KrxCollector](service/collector.py#L325) 클래스로 작성했습니다.
 - 라이브러리를 이용해서 web에서 제공해주는 데이터를 받을 수 있도록 작성했습니다.
 - 일자 별로 받을 수 있게 하여 `현재 존재하지 않는 기업(상장폐지 기업)`에 대해서도 놓치지 않고 수집을 할 수 있도록 진행했습니다.
 - krx를 이용해서는 일자 별, 종목들의 ohlcv데이터와 시가총액 데이터를 받았습니다.
@@ -65,7 +65,7 @@ $ pip install -r requirements.txt
 
 **DART 재무재표 수집**
 
-- collector.py에 [DartCollector](service/collector.py#22) 클래스로 작성했습니다.
+- collector.py에 [DartCollector](service/collector.py#L22) 클래스로 작성했습니다.
 - Dart도 Krx로 데이터를 받을 때와 마찬가지로 상장폐지 기업의 공시도 받아야 정확한 백테스트가 이뤄지기 때문에 날짜 별로 받으려는 [시도](service/collector.py#274)를 했습니다. 그러나 받아야하는 양이 너무 많아지고 소요시간도 오래걸리기 때문에 방법을 바꿔 특정 기업의 재무재표만 데이터를 받을 수 있도록 [수정](service/collector.py#274)했습니다.
   - 바뀐 방법을 사용해도 특정일에만 존재하는 상장폐지 기업의 데이터도 놓치지 않고 받아야 하므로 [정해진 기간에 존재했던 기업의 리스트](service/collector.py#226)로 재무재표 데이터를 요청했습니다.
 - 데이터를 수집하는데 라이브러리의 모든 기능들을 사용할 필요가 없고, 데이터를 가공하기 쉽게 하기 위해 클래스 내부에서 사용하는 [\_get_fs](service/collector.py#L171) 메소드를 작성했습니다.
@@ -93,7 +93,7 @@ $ pip install -r requirements.txt
 
 ### 4. 백테스트
 
-- 백테스트의 실행은 [cmd](https://vscode.dev/github/sstoneju/test-quant-system/blob/develop/main.py#L87)로 실행 할 수 있게 했습니다.
+- 백테스트의 실행은 [cmd](main.py#L87)로 실행 할 수 있게 했습니다.
 - `QuantStrategy`와 결합도를 줄이기 위해 DI로 전략의 추출을 사용합니다.
 - 백테스트 시 필요한 param으로 `start_date`, `end_date`, `rebalancing_date`, `extract_count`, `set_amount` 를 사용했습니다.
 - 매달 리밸런싱 시 구매한 종목을 확인 할 수 있도록 `history_bucket: DataFrame` 변수를 두었습니다.
