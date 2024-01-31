@@ -46,15 +46,10 @@ def main(func, from_date, to_date):
             sorted_list = pd.read_csv('연결포괄손익계산서_20220101_20240114.csv')['corp_name'].drop_duplicates().to_list()
             sorted_list2 = pd.read_csv('연결손익계산서_20240117.csv')['corp_name'].drop_duplicates().tolist()
             logger.info(f"{len(sorted_list)}:  {sorted_list}")
-        if func == "dart_corp_info":
-            # python main.py --func dart_corp_info
+        if func == "dart_fs_by_day":
+            # python main.py --func dart_fs_by_day
             dart_api = DartCollector()
             result = dart_api.dart_fs_by_day(from_date='20230101', to_date='20240114')
-            logger.info(result)
-        if func == "dart_fs_basic":
-            # python main.py --func dart_fs_basic
-            dart_api = DartCollector()
-            result = dart_api.dart_fs_basic()
             logger.info(result)
 
         # NOTE 데이터 전처리
